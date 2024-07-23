@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
+import { Container, Typography, Button, Paper } from '@mui/material';
 
 export default function Home() {
   const [quotes, setQuotes] = useState([]);
   const [currentQuote, setCurrentQuote] = useState("");
-  
+
   useEffect(() => {
     fetch('/api/quotes')
       .then((response) => response.json())
       .then((data) => {
+        console.log('Fetched data:', data); // Add this line to check the fetched data
         setQuotes(data);
         if (data.length > 0) {
           setCurrentQuote(data[Math.floor(Math.random() * data.length)].Quote);
@@ -15,44 +17,58 @@ export default function Home() {
       });
   }, []);
 
-  useEffect(() => {
+  const handleChangeQuote = () => {
     if (quotes.length > 0) {
-      const interval = setInterval(() => {
-        setCurrentQuote(quotes[Math.floor(Math.random() * quotes.length)].Quote);
-      }, 10000); // 5000ms = 5 seconds
-
-      return () => clearInterval(interval); // Cleanup interval on component unmount
+      setCurrentQuote(quotes[Math.floor(Math.random() * quotes.length)].Quote);
     }
-  }, [quotes]);
+  };
 
   return (
-    <div style={styles.container}>
-      <div style={styles.quoteBox}>
-        <p style={styles.quote}>{currentQuote}</p>
-      </div>
-    </div>
+    <Container
+      disableGutters
+      maxWidth={false}
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        width: '100vw',
+        backgroundColor: '#f0f0f0',
+        padding: 0,
+        margin: 0,
+      }}
+    >
+      <Paper
+        elevation={3}
+        sx={{
+          padding: '20px',
+          borderRadius: '10px',
+          backgroundColor: '#ffffff',
+          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+          maxWidth: '600px',
+          textAlign: 'center',
+          margin: '20px',
+          width: '90%',
+        }}
+      >
+        <Typography variant="h5" component="p" sx={{ fontStyle: 'italic', color: '#333', marginBottom: '20px' }}>
+          {currentQuote}
+        </Typography>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={handleChangeQuote}
+          sx={{
+            borderRadius: '20px',
+            padding: '10px 20px',
+            textTransform: 'none',
+            fontSize: '13px',
+          }}
+        >
+          Next Quote
+        </Button>
+      </Paper>
+    </Container>
   );
 }
-
-const styles = {
-  container: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    backgroundColor: '#f0f0f0',
-  },
-  quoteBox: {
-    padding: '20px',
-    borderRadius: '10px',
-    backgroundColor: 'white',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    maxWidth: '600px',
-    textAlign: 'center',
-  },
-  quote: {
-    fontSize: '1.5em',
-    fontStyle: 'italic',
-    color: '#333',
-  },
-};
