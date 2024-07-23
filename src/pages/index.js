@@ -52,7 +52,7 @@ export default function Home() {
           width: '90%',
         }}
       >
-        <Typography variant="h5" component="p" sx={{ fontStyle: 'italic', color: '#333', marginBottom: '20px' }}>
+        <Typography variant="body1" component="p" sx={{ fontStyle: 'poppins', color: '#333', marginBottom: '20px' }}>
           {currentQuote}
         </Typography>
         <Button
