@@ -1,4 +1,5 @@
-import { connectToDatabase } from '../../../lib/mongodb';
+import { connectToDatabase } from '../../../lib/mongodb.js';
+import { importQuotesFromCSV } from '../../../lib/importQuotes.js';
 
 export default async function handler(req, res) {
   try {
@@ -8,15 +9,19 @@ export default async function handler(req, res) {
       // Fetch quotes from the 'quotes' collection within 'books' database
       const quotes = await db.collection('quotes').find({}).toArray();
       
-      // Debugging: Log the fetched quotes to the server console
-    
-
       // Check if quotes array is empty
       if (quotes.length === 0) {
         return res.status(404).json({ message: 'No quotes found' });
       }
 
       res.status(200).json(quotes);
+    } else if (req.method === 'POST') {
+      try {
+        const message = await importQuotesFromCSV();
+        res.status(200).json({ message });
+      } catch (error) {
+        res.status(500).json({ message: error });
+      }
     } else {
       res.status(405).json({ message: 'Method not allowed' });
     }

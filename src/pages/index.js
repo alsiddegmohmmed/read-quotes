@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Container, Typography, Button, Paper } from '@mui/material';
+import axios from 'axios';
 
 export default function Home() {
   const [quotes, setQuotes] = useState([]);
@@ -9,7 +10,6 @@ export default function Home() {
     fetch('/api/quotes')
       .then((response) => response.json())
       .then((data) => {
-        console.log('Fetched data:', data); // Add this line to check the fetched data
         setQuotes(data);
         if (data.length > 0) {
           setCurrentQuote(data[Math.floor(Math.random() * data.length)].Quote);
@@ -20,6 +20,20 @@ export default function Home() {
   const handleChangeQuote = () => {
     if (quotes.length > 0) {
       setCurrentQuote(quotes[Math.floor(Math.random() * quotes.length)].Quote);
+    }
+  };
+
+  const handleUpload = async () => {
+    try {
+      const response = await axios.post('/api/quotes');
+
+      if (response.status === 200) {
+        alert('Quotes uploaded successfully');
+        window.location.reload(); // Refresh the page to show the new quotes
+      }
+    } catch (error) {
+      console.error('Error uploading quotes:', error);
+      alert('Failed to upload quotes');
     }
   };
 
@@ -67,6 +81,20 @@ export default function Home() {
           }}
         >
           Next Quote
+        </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          onClick={handleUpload}
+          sx={{
+            borderRadius: '20px',
+            padding: '10px 20px',
+            textTransform: 'none',
+            fontSize: '13px',
+            marginTop: '10px',
+          }}
+        >
+          Import CSV Quotes
         </Button>
       </Paper>
     </Container>
