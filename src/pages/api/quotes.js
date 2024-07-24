@@ -1,5 +1,4 @@
-import { connectToDatabase } from '../../../lib/mongodb.js';
-import { importQuotesFromCSV } from '../../../lib/uploadQuotes.js';
+import { connectToDatabase } from '../../../lib/mongodb.js'import { importQuotesFromCSV } from '../../../lib/uploadQuotes.js';
 
 export default async function handler(req, res) {
   try {
