@@ -1,21 +1,30 @@
 import { useEffect, useState } from 'react';
-import { Container, Typography, Button, Paper } from '@mui/material';
+import { Container, Typography, Button, Paper, Alert, TextField } from '@mui/material';
 import axios from 'axios';
 
 export default function Home() {
   const [quotes, setQuotes] = useState([]);
   const [currentQuote, setCurrentQuote] = useState("");
+  const [alert, setAlert] = useState(null);
+  const [startId, setStartId] = useState("");
+  const [endId, setEndId] = useState("");
 
   useEffect(() => {
-    fetch('/api/quotes')
-      .then((response) => response.json())
-      .then((data) => {
-        setQuotes(data);
-        if (data.length > 0) {
-          setCurrentQuote(data[Math.floor(Math.random() * data.length)].Quote);
-        }
-      });
+    fetchQuotes();
   }, []);
+
+  const fetchQuotes = async () => {
+    try {
+      const response = await fetch('/api/quotes');
+      const data = await response.json();
+      setQuotes(data);
+      if (data.length > 0) {
+        setCurrentQuote(data[Math.floor(Math.random() * data.length)].Quote);
+      }
+    } catch (error) {
+      setAlert({ severity: 'error', message: 'Failed to fetch quotes' });
+    }
+  };
 
   const handleChangeQuote = () => {
     if (quotes.length > 0) {
@@ -28,12 +37,29 @@ export default function Home() {
       const response = await axios.post('/api/quotes');
 
       if (response.status === 200) {
-        alert('Quotes uploaded successfully');
-        window.location.reload(); // Refresh the page to show the new quotes
+        setAlert({ severity: 'success', message: response.data.message });
+        fetchQuotes(); // Refresh the quotes
       }
     } catch (error) {
       console.error('Error uploading quotes:', error);
-      alert('Failed to upload quotes');
+      setAlert({ severity: 'error', message: 'Failed to upload quotes' });
+    }
+  };
+
+  const handleDelete = async () => {
+    try {
+      const response = await axios.post('/api/deleteQuotes', {
+        startId,
+        endId
+      });
+
+      if (response.status === 200) {
+        setAlert({ severity: 'success', message: response.data.message });
+        fetchQuotes(); // Refresh the quotes
+      }
+    } catch (error) {
+      console.error('Error deleting quotes:', error);
+      setAlert({ severity: 'error', message: 'Failed to delete quotes' });
     }
   };
 
@@ -53,6 +79,7 @@ export default function Home() {
         margin: 0,
       }}
     >
+      {alert && <Alert severity={alert.severity}>{alert.message}</Alert>}
       <Paper
         elevation={3}
         sx={{
@@ -82,7 +109,7 @@ export default function Home() {
         >
           Next Quote
         </Button>
-        <Button
+        {/* <Button
           variant="contained"
           color="secondary"
           onClick={handleUpload}
@@ -95,7 +122,35 @@ export default function Home() {
           }}
         >
           Import CSV Quotes
-        </Button>
+        </Button> */}
+        {/* <TextField
+          label="Start ObjectId"
+          variant="outlined"
+          value={startId}
+          onChange={(e) => setStartId(e.target.value)}
+          sx={{ marginTop: '20px', width: '80%' }}
+        />
+        <TextField
+          label="End ObjectId"
+          variant="outlined"
+          value={endId}
+          onChange={(e) => setEndId(e.target.value)}
+          sx={{ marginTop: '20px', width: '80%' }}
+        />
+        <Button
+          variant="contained"
+          color="error"
+          onClick={handleDelete}
+          sx={{
+            borderRadius: '20px',
+            padding: '10px 20px',
+            textTransform: 'none',
+            fontSize: '13px',
+            marginTop: '20px',
+          }}
+        >
+          Delete Quotes
+        </Button> */}
       </Paper>
     </Container>
   );
