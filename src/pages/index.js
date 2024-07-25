@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Container, Typography, Button, Paper, Alert, TextField } from '@mui/material';
 import axios from 'axios';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   const [quotes, setQuotes] = useState([]);
