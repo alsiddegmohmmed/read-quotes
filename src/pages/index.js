@@ -74,7 +74,7 @@ export default function Home() {
         alignItems: 'center',
         height: '100vh',
         width: '100vw',
-        backgroundColor: '#f0f0f0',
+        backgroundColor: '#363636',
         padding: 0,
         margin: 0,
       }}
@@ -85,7 +85,7 @@ export default function Home() {
         sx={{
           padding: '20px',
           borderRadius: '10px',
-          backgroundColor: '#ffffff',
+          backgroundColor: '#101010',
           boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
           maxWidth: '600px',
           textAlign: 'center',
@@ -93,22 +93,26 @@ export default function Home() {
           width: '90%',
         }}
       >
-        <Typography variant="body1" component="p" sx={{ fontStyle: 'poppins', color: '#333', marginBottom: '20px' }}>
+        <Typography variant="body1" component="p" sx={{ fontStyle: 'poppins', color: '#FBFEF9', marginBottom: '20px' }}>
           {currentQuote}
         </Typography>
         <Button
           variant="contained"
-          color="primary"
           onClick={handleChangeQuote}
           sx={{
             borderRadius: '20px',
             padding: '10px 20px',
             textTransform: 'none',
             fontSize: '13px',
+            backgroundColor: '#0E79B2',
+            '&:hover': {
+              backgroundColor: '#0B5F86', // Adjust the hover color if needed
+            }
           }}
         >
           Next Quote
         </Button>
+
         {/* <Button
           variant="contained"
           color="secondary"
