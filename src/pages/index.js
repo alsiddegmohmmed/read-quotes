@@ -51,7 +51,7 @@ export default function Home() {
   const getAdjustedFontSize = (text) => {
     if (!text) return '1rem'; // Default font size for undefined or empty text
     const length = text.length;
-    if (length > 400) return '1.1rem';
+    if (length > 400) return '0.9rem';
     if (length > 300) return '1.1rem';
     if (length > 200) return '1.1rem';
     if (length > 150) return '1.1rem';
@@ -149,7 +149,9 @@ export default function Home() {
           >
             —{currentQuote.bookTitle}
           </Typography>
-          <Box
+          
+        </Paper>
+        <Box
             sx={{
               display: 'flex',
               justifyContent: 'space-between',
@@ -174,7 +176,7 @@ export default function Home() {
               Next Quote
             </Button>
           </Box>
-        </Paper>
+        
       </Box>
       <Analytics />
       <SpeedInsights />
