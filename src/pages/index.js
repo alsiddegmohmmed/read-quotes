@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-import { Container, Typography, Button, Paper, IconButton, Box } from '@mui/material';
+import { Container, Typography, Button, Paper, Alert, IconButton, Box } from '@mui/material';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import CheckIcon from '@mui/icons-material/Check';
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/react"
+import axios from 'axios';
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
   const [quotes, setQuotes] = useState([]);
@@ -49,13 +50,10 @@ export default function Home() {
   };
 
   const getAdjustedFontSize = (text) => {
-    if (!text) return '1rem'; // Default font size for undefined or empty text
-    const length = text.length;
-    if (length > 400) return '0.9rem';
-    if (length > 300) return '1.1rem';
-    if (length > 200) return '1.1rem';
-    if (length > 150) return '1.1rem';
-    return '1.2rem';
+    const length = text ? text.length : 0;
+    if (length > 400) return '1.0rem';
+    if (length > 150) return '1.3rem';
+    return '1.3rem';
   };
 
   return (
@@ -74,7 +72,7 @@ export default function Home() {
         margin: 0,
       }}
     >
-      <Box sx={{ position: 'relative', width: '100%', maxWidth: { xs: '90%', sm: '80%', md: '600px' } }}>
+      <Box sx={{ position: 'relative', width: '100%', maxWidth: { xs: '95%', sm: '80%', md: '600px' } }}>
         <IconButton
           onClick={handleCopyQuote}
           sx={{
@@ -103,7 +101,6 @@ export default function Home() {
             padding: { xs: '40px 20px', sm: '50px 30px', md: '60px 40px' },
             borderRadius: '10px',
             backgroundColor: '#000000',
-            maxWidth: { xs: '90%', sm: '80%', md: '600px' },
             width: '100%',
             boxSizing: 'border-box',
             display: 'flex',
@@ -118,9 +115,6 @@ export default function Home() {
             sx={{
               flexGrow: 1,
               overflowY: 'auto',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
             }}
           >
             <Typography
@@ -129,10 +123,13 @@ export default function Home() {
               sx={{
                 fontFamily: 'serif',
                 color: '#FFFFFF',
-                fontSize: getAdjustedFontSize(currentQuote.Quote),
+                fontSize: {
+                  xs: '1rem', // Small screens
+                  sm: '1.4rem', // Medium screens
+                  md: getAdjustedFontSize(currentQuote.Quote), // Larger screens adjust if long text
+                  lg: getAdjustedFontSize(currentQuote.Quote), // Desktop view adjust if long text
+                },
                 lineHeight: 1.6,
-                textAlign: '',
-                padding: '0 10px',
               }}
             >
               {currentQuote.Quote}
@@ -149,34 +146,25 @@ export default function Home() {
           >
             —{currentQuote.bookTitle}
           </Typography>
-          
         </Paper>
-        <Box
-            sx={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              marginTop: 2,
-            }}
-          >
-            <Button
-              variant="contained"
-              onClick={handleChangeQuote}
-              sx={{
-                borderRadius: '20px',
-                padding: '8px 16px',
-                textTransform: 'none',
-                fontSize: '12px',
-                backgroundColor: '#0E79B2',
-                '&:hover': {
-                  backgroundColor: '#0B5F86',
-                },
-              }}
-            >
-              Next Quote
-            </Button>
-          </Box>
-        
+        <Button
+          variant="contained"
+          onClick={handleChangeQuote}
+          sx={{
+            borderRadius: '20px',
+            padding: '8px 16px',
+            textTransform: 'none',
+            fontSize: '12px',
+            backgroundColor: '#0E79B2',
+            alignSelf: 'flex-start',
+            mt: 2,
+            '&:hover': {
+              backgroundColor: '#0B5F86',
+            }
+          }}
+        >
+          Next Quote
+        </Button>
       </Box>
       <Analytics />
       <SpeedInsights />
