@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
-import { Container, Typography, Button, Paper, Alert, TextField } from '@mui/material';
-import axios from 'axios';
+import { Container, Typography, Button, Paper, IconButton, Box } from '@mui/material';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import CheckIcon from '@mui/icons-material/Check';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   const [quotes, setQuotes] = useState([]);
-  const [currentQuote, setCurrentQuote] = useState("");
+  const [currentQuote, setCurrentQuote] = useState({});
   const [alert, setAlert] = useState(null);
-  const [startId, setStartId] = useState("");
-  const [endId, setEndId] = useState("");
+  const [isCopied, setIsCopied] = useState(false);
 
   useEffect(() => {
     fetchQuotes();
@@ -21,7 +21,7 @@ export default function Home() {
       const data = await response.json();
       setQuotes(data);
       if (data.length > 0) {
-        setCurrentQuote(data[Math.floor(Math.random() * data.length)].Quote);
+        setCurrentQuote(data[Math.floor(Math.random() * data.length)]);
       }
     } catch (error) {
       setAlert({ severity: 'error', message: 'Failed to fetch quotes' });
@@ -30,39 +30,32 @@ export default function Home() {
 
   const handleChangeQuote = () => {
     if (quotes.length > 0) {
-      setCurrentQuote(quotes[Math.floor(Math.random() * quotes.length)].Quote);
+      setCurrentQuote(quotes[Math.floor(Math.random() * quotes.length)]);
     }
   };
 
-  const handleUpload = async () => {
-    try {
-      const response = await axios.post('/api/quotes');
-
-      if (response.status === 200) {
-        setAlert({ severity: 'success', message: response.data.message });
-        fetchQuotes(); // Refresh the quotes
-      }
-    } catch (error) {
-      console.error('Error uploading quotes:', error);
-      setAlert({ severity: 'error', message: 'Failed to upload quotes' });
-    }
+  const handleCopyQuote = () => {
+    const quoteText = `"${currentQuote.Quote}" — ${currentQuote.bookTitle}`;
+    navigator.clipboard.writeText(quoteText).then(() => {
+      setIsCopied(true);
+      setAlert({ severity: 'success', message: 'Quote copied to clipboard!' });
+      setTimeout(() => {
+        setIsCopied(false);
+      }, 3000);
+    }).catch(err => {
+      console.error('Error copying text: ', err);
+      setAlert({ severity: 'error', message: 'Failed to copy quote' });
+    });
   };
 
-  const handleDelete = async () => {
-    try {
-      const response = await axios.post('/api/deleteQuotes', {
-        startId,
-        endId
-      });
-
-      if (response.status === 200) {
-        setAlert({ severity: 'success', message: response.data.message });
-        fetchQuotes(); // Refresh the quotes
-      }
-    } catch (error) {
-      console.error('Error deleting quotes:', error);
-      setAlert({ severity: 'error', message: 'Failed to delete quotes' });
-    }
+  const getAdjustedFontSize = (text) => {
+    if (!text) return '1rem'; // Default font size for undefined or empty text
+    const length = text.length;
+    if (length > 400) return '1.1rem';
+    if (length > 300) return '1.1rem';
+    if (length > 200) return '1.1rem';
+    if (length > 150) return '1.1rem';
+    return '1.2rem';
   };
 
   return (
@@ -74,93 +67,117 @@ export default function Home() {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '100vh',
-        width: '100vw',
-        backgroundColor: '#363636',
+        minHeight: '100vh',
+        width: '100%',
+        backgroundColor: '#000000',
         padding: 0,
         margin: 0,
       }}
     >
-      {alert && <Alert severity={alert.severity}>{alert.message}</Alert>}
-      <Paper
-        elevation={3}
-        sx={{
-          padding: '20px',
-          borderRadius: '10px',
-          backgroundColor: '#101010',
-          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-          maxWidth: '600px',
-          textAlign: 'center',
-          margin: '20px',
-          width: '90%',
-        }}
-      >
-        <Typography variant="body1" component="p" sx={{ fontStyle: 'poppins', color: '#FBFEF9', marginBottom: '20px' }}>
-          {currentQuote}
-        </Typography>
-        <Button
-          variant="contained"
-          onClick={handleChangeQuote}
+      <Box sx={{ position: 'relative', width: '100%', maxWidth: { xs: '90%', sm: '80%', md: '600px' } }}>
+        <IconButton
+          onClick={handleCopyQuote}
           sx={{
-            borderRadius: '20px',
-            padding: '10px 20px',
-            textTransform: 'none',
-            fontSize: '13px',
-            backgroundColor: '#0E79B2',
-            '&:hover': {
-              backgroundColor: '#0B5F86', // Adjust the hover color if needed
-            }
+            position: 'absolute',
+            top: '10px',
+            right: '10px',
+            color: '#FBFEF9',
+            padding: '4px',
+            zIndex: 1,
           }}
         >
-          Next Quote
-        </Button>
+          {isCopied ? (
+            <CheckIcon fontSize="small" />
+          ) : (
+            <ContentCopyIcon fontSize="small" />
+          )}
+          <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
+            {isCopied ? 'Copied!' : 'Copy'}
+          </Typography>
+        </IconButton>
 
-        {/* <Button
-          variant="contained"
-          color="secondary"
-          onClick={handleUpload}
+        <Paper
+          elevation={0}
           sx={{
-            borderRadius: '20px',
-            padding: '10px 20px',
-            textTransform: 'none',
-            fontSize: '13px',
-            marginTop: '10px',
+            position: 'relative',
+            padding: { xs: '40px 20px', sm: '50px 30px', md: '60px 40px' },
+            borderRadius: '10px',
+            backgroundColor: '#000000',
+            maxWidth: { xs: '90%', sm: '80%', md: '600px' },
+            width: '100%',
+            boxSizing: 'border-box',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            minHeight: '300px',
+            maxHeight: '80vh',
+            overflow: 'hidden',
           }}
         >
-          Import CSV Quotes
-        </Button> */}
-        {/* <TextField
-          label="Start ObjectId"
-          variant="outlined"
-          value={startId}
-          onChange={(e) => setStartId(e.target.value)}
-          sx={{ marginTop: '20px', width: '80%' }}
-        />
-        <TextField
-          label="End ObjectId"
-          variant="outlined"
-          value={endId}
-          onChange={(e) => setEndId(e.target.value)}
-          sx={{ marginTop: '20px', width: '80%' }}
-        />
-        <Button
-          variant="contained"
-          color="error"
-          onClick={handleDelete}
-          sx={{
-            borderRadius: '20px',
-            padding: '10px 20px',
-            textTransform: 'none',
-            fontSize: '13px',
-            marginTop: '20px',
-          }}
-        >
-          Delete Quotes
-        </Button> */}
-      </Paper>
+          <Box
+            sx={{
+              flexGrow: 1,
+              overflowY: 'auto',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Typography
+              variant="body1"
+              component="p"
+              sx={{
+                fontFamily: 'serif',
+                color: '#FFFFFF',
+                fontSize: getAdjustedFontSize(currentQuote.Quote),
+                lineHeight: 1.6,
+                textAlign: '',
+                padding: '0 10px',
+              }}
+            >
+              {currentQuote.Quote}
+            </Typography>
+          </Box>
+          <Typography
+            variant="caption"
+            sx={{
+              color: '#888888',
+              alignSelf: 'flex-end',
+              fontFamily: 'sans-serif',
+              fontSize: { xs: '0.7rem', sm: '0.8rem', md: '0.9rem' },
+            }}
+          >
+            —{currentQuote.bookTitle}
+          </Typography>
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              marginTop: 2,
+            }}
+          >
+            <Button
+              variant="contained"
+              onClick={handleChangeQuote}
+              sx={{
+                borderRadius: '20px',
+                padding: '8px 16px',
+                textTransform: 'none',
+                fontSize: '12px',
+                backgroundColor: '#0E79B2',
+                '&:hover': {
+                  backgroundColor: '#0B5F86',
+                },
+              }}
+            >
+              Next Quote
+            </Button>
+          </Box>
+        </Paper>
+      </Box>
       <Analytics />
       <SpeedInsights />
     </Container>
-    
   );
 }
