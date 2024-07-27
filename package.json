@@ -17,6 +17,7 @@
     "@vercel/speed-insights": "^1.0.12",
     "axios": "^1.7.2",
     "csv-parser": "^3.0.0",
+    "html2canvas": "^1.4.1",
     "mongoose": "^8.5.1",
     "papaparse": "^5.4.1",
     "react": "^18",
