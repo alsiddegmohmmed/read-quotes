@@ -10,13 +10,13 @@ export default async function handler(req, res) {
     const collection = db.collection('quotes');
 
     // Get the documents from index 60 to 100 
-    const documents = await collection.find().skip(914).limit(12).toArray(); //831 -892
+    const documents = await collection.find().skip(1048).limit(85).toArray(); //831 -892
 
     // Update each document
     const updatePromises = documents.map((doc) => 
       collection.updateOne(
         { _id: doc._id },
-        { $set: { bookTitle: "White Nights by Fyodor Dostoevsky" } }
+        { $set: { bookTitle: "Rich Dad Poor Dad by Robert Kiyosaki and Sharon Lechter" } }
       )
     );
 

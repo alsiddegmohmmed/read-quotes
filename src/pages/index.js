@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { Container, Typography, Button, Paper, IconButton, Box } from '@mui/material';
+import { Container, Typography, Button, Paper, IconButton, Box, CircularProgress } from '@mui/material';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import CheckIcon from '@mui/icons-material/Check';
 import ShareIcon from '@mui/icons-material/Share';
@@ -12,6 +12,7 @@ export default function Home() {
   const [currentQuote, setCurrentQuote] = useState({});
   const [alert, setAlert] = useState(null);
   const [isCopied, setIsCopied] = useState(false);
+  const [loading, setLoading] = useState(true);
   const quoteCardRef = useRef(null);
 
   useEffect(() => {
@@ -26,8 +27,10 @@ export default function Home() {
       if (data.length > 0) {
         setCurrentQuote(data[Math.floor(Math.random() * data.length)]);
       }
+      setLoading(false);
     } catch (error) {
       setAlert({ severity: 'error', message: 'Failed to fetch quotes' });
+      setLoading(false);
     }
   };
 
@@ -122,140 +125,145 @@ export default function Home() {
         margin: 0,
       }}
     >
-      <Box sx={{ position: 'relative', width: '100%', maxWidth: { xs: '95%', sm: '80%', md: '600px' } }}>
-        <Box sx={{ position: 'absolute', top: '10px', right: '10px', zIndex: 1, display: 'flex' }}>
-          <IconButton
-            onClick={handleCopyQuote}
-            sx={{
-              color: '#FBFEF9',
-              padding: '4px',
-              marginRight: '8px',
-            }}
-          >
-            {isCopied ? (
-              <CheckIcon fontSize="small" />
-            ) : (
-              <ContentCopyIcon fontSize="small" />
-            )}
-            <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
-              {isCopied ? 'Copied!' : 'Copy'}
-            </Typography>
-          </IconButton>
-          <IconButton
-            onClick={handleShare}
-            sx={{
-              color: '#FBFEF9',
-              padding: '4px',
-            }}
-          >
-            <ShareIcon fontSize="small" />
-            <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
-              Share
-            </Typography>
-          </IconButton>
-          <IconButton
-            onClick={handleShareImage}
-            sx={{
-              color: '#FBFEF9',
-              padding: '4px',
-              marginLeft: '8px',
-            }}
-          >
-            <ShareIcon fontSize="small" />
-            <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
-              Share Image
-            </Typography>
-          </IconButton>
-        </Box>
+      {loading ? (
+        <CircularProgress color="inherit" />
+      ) : (
+        <>
+          <Box sx={{ position: 'relative', width: '100%', maxWidth: { xs: '95%', sm: '80%', md: '600px' } }}>
+            <Box sx={{ position: 'absolute', top: '10px', right: '10px', zIndex: 1, display: 'flex' }}>
+              <IconButton
+                onClick={handleCopyQuote}
+                sx={{
+                  color: '#FBFEF9',
+                  padding: '4px',
+                  marginRight: '8px',
+                }}
+              >
+                {isCopied ? (
+                  <CheckIcon fontSize="small" />
+                ) : (
+                  <ContentCopyIcon fontSize="small" />
+                )}
+                <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
+                  {isCopied ? 'Copied!' : 'Copy'}
+                </Typography>
+              </IconButton>
+              <IconButton
+                onClick={handleShare}
+                sx={{
+                  color: '#FBFEF9',
+                  padding: '4px',
+                }}
+              >
+                <ShareIcon fontSize="small" />
+                <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
+                  Share
+                </Typography>
+              </IconButton>
+              <IconButton
+                onClick={handleShareImage}
+                sx={{
+                  color: '#FBFEF9',
+                  padding: '4px',
+                  marginLeft: '8px',
+                }}
+              >
+                <ShareIcon fontSize="small" />
+                <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
+                  Share Image
+                </Typography>
+              </IconButton>
+            </Box>
 
-        <Paper
-          elevation={0}
-          ref={quoteCardRef}
-          sx={{
-            position: 'relative',
-            padding: { xs: '40px 20px', sm: '50px 30px', md: '60px 40px' },
-            borderRadius: '10px',
-            backgroundColor: '#000000',
-            width: '100%',
-            boxSizing: 'border-box',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between',
-            minHeight: '300px',
-            maxHeight: '80vh',
-            overflow: 'hidden',
-          }}
-        >
-          <Box
-            sx={{
-              flexGrow: 1,
-              overflowY: 'auto',
-            }}
-          >
-            <Typography
-              variant="body1"
-              component="p"
+            <Paper
+              elevation={0}
+              ref={quoteCardRef}
               sx={{
-                fontFamily: 'serif',
-                color: '#FFFFFF',
-                fontSize: {
-                  xs: '1rem',
-                  sm: '1.4rem',
-                  md: getAdjustedFontSize(currentQuote.Quote),
-                  lg: getAdjustedFontSize(currentQuote.Quote),
-                },
-                lineHeight: 1.6,
-                textAlign: 'left', // Align text to the left
+                position: 'relative',
+                padding: { xs: '40px 20px', sm: '50px 30px', md: '60px 40px' },
+                borderRadius: '10px',
+                backgroundColor: '#000000',
+                width: '100%',
+                boxSizing: 'border-box',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                minHeight: '300px',
+                maxHeight: '80vh',
+                overflow: 'hidden',
               }}
             >
-              {currentQuote.Quote}
-            </Typography>
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  overflowY: 'auto',
+                }}
+              >
+                <Typography
+                  variant="body1"
+                  component="p"
+                  sx={{
+                    fontFamily: 'serif',
+                    color: '#FFFFFF',
+                    fontSize: {
+                      xs: '1rem',
+                      sm: '1.4rem',
+                      md: getAdjustedFontSize(currentQuote.Quote),
+                      lg: getAdjustedFontSize(currentQuote.Quote),
+                    },
+                    lineHeight: 1.6,
+                    textAlign: 'left', // Align text to the left
+                  }}
+                >
+                  {currentQuote.Quote}
+                </Typography>
+              </Box>
+              <Typography
+                variant="caption"
+                sx={{
+                  color: '#888888',
+                  alignSelf: 'flex-end', // Align book title to the right
+                  fontFamily: 'sans-serif',
+                  fontSize: { xs: '0.7rem', sm: '0.8rem', md: '0.9rem' },
+                  textAlign: 'right', // Align book title to the right
+                }}
+              >
+                —{currentQuote.bookTitle}
+              </Typography>
+              
+            </Paper>
+            <Button
+              variant="contained"
+              onClick={handleChangeQuote}
+              sx={{
+                borderRadius: '20px',
+                padding: '8px 16px',
+                textTransform: 'none',
+                fontSize: '12px',
+                backgroundColor: '#0E79B2',
+                alignSelf: 'flex-start',
+                mt: 2,
+                '&:hover': {
+                  backgroundColor: '#0B5F86',
+                }
+              }}
+            >
+              Next Quote
+            </Button>
           </Box>
           <Typography
-            variant="caption"
+            variant="body2"
             sx={{
               color: '#888888',
-              alignSelf: 'flex-end', // Align book title to the right
+              mt: 4,
               fontFamily: 'sans-serif',
-              fontSize: { xs: '0.7rem', sm: '0.8rem', md: '0.9rem' },
-              textAlign: 'right', // Align book title to the right
+              textAlign: 'center',
             }}
           >
-            —{currentQuote.bookTitle}
+            © {new Date().getFullYear()} Siddeg Omer. All rights reserved.
           </Typography>
-          <Typography
-            variant="caption"
-            sx={{
-              color: '#888888',
-              position: 'absolute',
-              bottom: '10px',
-              left: '20px',
-              fontFamily: 'sans-serif',
-              fontSize: { xs: '0.7rem', sm: '0.8rem', md: '0.9rem' },
-            }}
-          >
-            By Siddeg
-          </Typography>
-        </Paper>
-        <Button
-          variant="contained"
-          onClick={handleChangeQuote}
-          sx={{
-            borderRadius: '20px',
-            padding: '8px 16px',
-            textTransform: 'none',
-            fontSize: '12px',
-            backgroundColor: '#0E79B2',
-            alignSelf: 'flex-start',
-            mt: 2,
-            '&:hover': {
-              backgroundColor: '#0B5F86',
-            }
-          }}
-        >
-          Next Quote
-        </Button>
-      </Box>
+        </>
+      )}
       <Analytics />
       <SpeedInsights />
     </Container>
