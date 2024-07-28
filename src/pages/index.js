@@ -6,6 +6,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import html2canvas from 'html2canvas';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
+import { signIn, signOut, useSession } from 'next-auth/react';
 
 export default function Home() {
   const [quotes, setQuotes] = useState([]);
@@ -14,6 +15,7 @@ export default function Home() {
   const [isCopied, setIsCopied] = useState(false);
   const [loading, setLoading] = useState(true);
   const quoteCardRef = useRef(null);
+  const { data: session, status } = useSession();
 
   useEffect(() => {
     fetchQuotes();
@@ -129,6 +131,46 @@ export default function Home() {
         <CircularProgress color="inherit" />
       ) : (
         <>
+          <Box sx={{ position: 'absolute', top: '10px', right: '10px', zIndex: 1, display: 'flex' }}>
+            {status === "authenticated" ? (
+              <Button
+                variant="contained"
+                onClick={() => signOut()}
+                sx={{
+                  borderRadius: '20px',
+                  padding: '8px 16px',
+                  textTransform: 'none',
+                  fontSize: '12px',
+                  backgroundColor: '#0E79B2',
+                  mt: 2,
+                  '&:hover': {
+                    backgroundColor: '#0B5F86',
+                  },
+                }}
+              >
+                Sign Out
+              </Button>
+            ) : (
+              <Button
+                variant="contained"
+                onClick={() => signIn('google')}
+                sx={{
+                  borderRadius: '20px',
+                  padding: '8px 16px',
+                  textTransform: 'none',
+                  fontSize: '12px',
+                  backgroundColor: '#0E79B2',
+                  mt: 2,
+                  '&:hover': {
+                    backgroundColor: '#0B5F86',
+                  },
+                }}
+              >
+                Sign In
+              </Button>
+            )}
+          </Box>
+
           <Box sx={{ position: 'relative', width: '100%', maxWidth: { xs: '95%', sm: '80%', md: '600px' } }}>
             <Box sx={{ position: 'absolute', top: '10px', right: '10px', zIndex: 1, display: 'flex' }}>
               <IconButton
@@ -212,7 +254,7 @@ export default function Home() {
                       lg: getAdjustedFontSize(currentQuote.Quote),
                     },
                     lineHeight: 1.6,
-                    textAlign: 'left', // Align text to the left
+                    textAlign: 'left',
                   }}
                 >
                   {currentQuote.Quote}
@@ -222,15 +264,14 @@ export default function Home() {
                 variant="caption"
                 sx={{
                   color: '#888888',
-                  alignSelf: 'flex-end', // Align book title to the right
+                  alignSelf: 'flex-end',
                   fontFamily: 'sans-serif',
                   fontSize: { xs: '0.7rem', sm: '0.8rem', md: '0.9rem' },
-                  textAlign: 'right', // Align book title to the right
+                  textAlign: 'right',
                 }}
               >
                 —{currentQuote.bookTitle}
               </Typography>
-              
             </Paper>
             <Button
               variant="contained"
