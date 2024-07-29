@@ -21,22 +21,7 @@ export default function Home() {
 
 
   useEffect(() => {
-    const fetchBookInfo = async () => {
-      try {
-        const response = await axios.get('/api/quotes?type=books');
-        console.log(response.data); // Log the response to check its structure
-  
-        const books = response.data;
-        const bookTitles = [...new Set(books.map(book => book.bookTitle))];
-        const bookCount = bookTitles.length;
-        console.log('Book Titles:', bookTitles); 
-  
-        setBookInfo({ bookCount, bookTitles });
-      } catch (error) {
-        console.error('Error fetching book info:', error);
-      }
-    };
-
+    
     fetchQuotes();
     fetchBookInfo();
 
@@ -54,6 +39,21 @@ export default function Home() {
     } catch (error) {
       setAlert({ severity: 'error', message: 'Failed to fetch quotes' });
       setLoading(false);
+    }
+  };
+  
+  const fetchBookInfo = async () => {
+    try {
+      const response = await axios.get('/api/quotes?type=books');
+
+      const books = response.data;
+      const bookTitles = [...new Set(books.map(book => book.bookTitle))];
+      const bookCount = bookTitles.length;
+      console.log('Book Titles:', bookTitles); 
+
+      setBookInfo({ bookCount, bookTitles });
+    } catch (error) {
+      console.error('Error fetching book info:', error);
     }
   };
 
