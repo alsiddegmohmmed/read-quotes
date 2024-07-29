@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { Container, Typography, Button, Paper, IconButton, Box, CircularProgress } from '@mui/material';
+import { Container, Typography, Button, Paper, IconButton, Box, CircularProgress , TextField} from '@mui/material';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import CheckIcon from '@mui/icons-material/Check';
 import ShareIcon from '@mui/icons-material/Share';
@@ -7,7 +7,7 @@ import html2canvas from 'html2canvas';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { signIn, signOut, useSession } from 'next-auth/react';
-
+import axios from 'axios';
 export default function Home() {
   const [quotes, setQuotes] = useState([]);
   const [currentQuote, setCurrentQuote] = useState({});
@@ -15,10 +15,32 @@ export default function Home() {
   const [isCopied, setIsCopied] = useState(false);
   const [loading, setLoading] = useState(true);
   const quoteCardRef = useRef(null);
-  const { data: session, status } = useSession();
+  const [startId, setStartId] = useState("");
+  const [endId, setEndId] = useState("");
+  const [bookInfo, setBookInfo] = useState({ bookCount: 0, bookTitles: [] });
+
+
 
   useEffect(() => {
+    const fetchBookInfo = async () => {
+      try {
+        const response = await axios.get('/api/quotes?type=books');
+        console.log(response.data); // Log the response to check its structure
+  
+        const books = response.data;
+        const bookTitles = [...new Set(books.map(book => book.bookTitle))];
+        const bookCount = bookTitles.length;
+        console.log('Book Titles:', bookTitles); 
+  
+        setBookInfo({ bookCount, bookTitles });
+      } catch (error) {
+        console.error('Error fetching book info:', error);
+      }
+    };
+
     fetchQuotes();
+    fetchBookInfo();
+
   }, []);
 
   const fetchQuotes = async () => {
@@ -35,6 +57,39 @@ export default function Home() {
       setLoading(false);
     }
   };
+
+  
+
+    const handleUpload = async () => {
+      try {
+        const response = await axios.post('/api/quotes');
+
+        if (response.status === 200) {
+          setAlert({ severity: 'success', message: response.data.message });
+          fetchQuotes(); // Refresh the quotes
+        }
+      } catch (error) {
+        console.error('Error uploading quotes:', error);
+        setAlert({ severity: 'error', message: 'Failed to upload quotes' });
+      }
+    };
+
+    const handleDelete = async () => {
+      try {
+        const response = await axios.post('/api/deleteQuotes', {
+          startId,
+          endId
+        });
+
+        if (response.status === 200) {
+          setAlert({ severity: 'success', message: response.data.message });
+          fetchQuotes(); // Refresh the quotes
+        }
+      } catch (error) {
+        console.error('Error deleting quotes:', error);
+        setAlert({ severity: 'error', message: 'Failed to delete quotes' });
+      }
+    };
 
   const handleChangeQuote = () => {
     if (quotes.length > 0) {
@@ -131,6 +186,7 @@ export default function Home() {
         <CircularProgress color="inherit" />
       ) : (
         <>
+        
           <Box sx={{ position: 'absolute', top: '10px', right: '10px', zIndex: 1, display: 'flex' }}>
             {status === "authenticated" ? (
               <Button
@@ -170,6 +226,12 @@ export default function Home() {
               </Button>
             )}
           </Box>
+          <Box sx={{ position: 'absolute', top: '10px', left: '10px', zIndex: 1, display: 'flex' }}>
+            <Typography variant="body1" sx={{ color: '#FBFEF9', mt: 2 }}>
+              Total Books: {bookInfo.bookCount}
+            </Typography>
+          </Box> 
+         
 
           <Box sx={{ position: 'relative', width: '100%', maxWidth: { xs: '95%', sm: '80%', md: '600px' } }}>
             <Box sx={{ position: 'absolute', top: '10px', right: '10px', zIndex: 1, display: 'flex' }}>
