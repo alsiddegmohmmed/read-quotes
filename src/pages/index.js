@@ -6,7 +6,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import html2canvas from 'html2canvas';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import { signIn, signOut, useSession } from 'next-auth/react';
+import { signIn, signOut} from 'next-auth/react';
 import axios from 'axios';
 export default function Home() {
   const [quotes, setQuotes] = useState([]);
