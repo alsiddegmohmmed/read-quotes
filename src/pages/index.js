@@ -6,7 +6,6 @@ import ShareIcon from '@mui/icons-material/Share';
 import html2canvas from 'html2canvas';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import { signIn, signOut} from 'next-auth/react';
 import axios from 'axios';
 export default function Home() {
   const [quotes, setQuotes] = useState([]);
@@ -187,45 +186,7 @@ export default function Home() {
       ) : (
         <>
         
-          <Box sx={{ position: 'absolute', top: '10px', right: '10px', zIndex: 1, display: 'flex' }}>
-            {status === "authenticated" ? (
-              <Button
-                variant="contained"
-                onClick={() => signOut()}
-                sx={{
-                  borderRadius: '20px',
-                  padding: '8px 16px',
-                  textTransform: 'none',
-                  fontSize: '12px',
-                  backgroundColor: '#0E79B2',
-                  mt: 2,
-                  '&:hover': {
-                    backgroundColor: '#0B5F86',
-                  },
-                }}
-              >
-                Sign Out
-              </Button>
-            ) : (
-              <Button
-                variant="contained"
-                onClick={() => signIn('google')}
-                sx={{
-                  borderRadius: '20px',
-                  padding: '8px 16px',
-                  textTransform: 'none',
-                  fontSize: '12px',
-                  backgroundColor: '#0E79B2',
-                  mt: 2,
-                  '&:hover': {
-                    backgroundColor: '#0B5F86',
-                  },
-                }}
-              >
-                Sign In
-              </Button>
-            )}
-          </Box>
+          
           <Box sx={{ position: 'absolute', top: '10px', left: '10px', zIndex: 1, display: 'flex' }}>
             <Typography variant="body1" sx={{ color: '#FBFEF9', mt: 2 }}>
               Total Books: {bookInfo.bookCount}
