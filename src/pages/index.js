@@ -325,7 +325,7 @@ export default function Home() {
             }}
           >
             © {new Date().getFullYear()} Siddeg Omer. All rights reserved.
-          </Typography>
+          </Typography> 
         </>
       )}
       <Analytics />
