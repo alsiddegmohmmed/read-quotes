@@ -13,6 +13,9 @@ pnpm dev
 # or
 bun dev
 ```
+![alt text](https://github.com/alsiddegmohmmed/read-quotes/blob/main/public/preview.png?raw=true)
+
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
