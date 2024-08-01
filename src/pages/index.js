@@ -143,7 +143,7 @@ export default function Home() {
           await navigator.share({
             files: [file],
             title: 'Quote from Siddeg',
-            text: `"${currentQuote.Quote}" — ${currentQuote.bookTitle}`,
+            text: `"${currentQuote.Quote}" — ${currentQuote.bookTitle} by ${currentQuote.Author}`,
           });
         } else {
           const link = document.createElement('a');
@@ -293,9 +293,10 @@ export default function Home() {
                   textAlign: 'right',
                 }}
               >
-                —{currentQuote.bookTitle}
+                —{currentQuote.bookTitle} by {currentQuote.Author}
               </Typography>
             </Paper>
+            
             <Button
               variant="contained"
               onClick={handleChangeQuote}
