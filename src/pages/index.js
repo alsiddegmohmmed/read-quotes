@@ -296,21 +296,7 @@ export default function Home() {
                 —{currentQuote.bookTitle} by {currentQuote.Author}
               </Typography>
             </Paper>
-
-            <Button
-          variant="contained"
-          color="secondary"
-          onClick={handleUpload}
-          sx={{
-            borderRadius: '20px',
-            padding: '10px 20px',
-            textTransform: 'none',
-            fontSize: '13px',
-            marginTop: '10px',
-          }}
-        >
-          Import CSV Quotes
-        </Button>
+            
         
             <Button
               variant="contained"
