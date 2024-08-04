@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     const { db } = await connectToDatabase();
 
     if (req.method === 'POST') {
-      const { userId, quote, bookTitle } = req.body;
+      const { userId, quote, bookTitle,  Author } = req.body;
 
       if (!userId || !quote || !bookTitle) {
         return res.status(400).json({ message: 'Missing required fields' });
@@ -15,6 +15,7 @@ export default async function handler(req, res) {
         userId,
         quote,
         bookTitle,
+        Author
       };
 
       await db.collection('userQuotes').insertOne(userQuote);

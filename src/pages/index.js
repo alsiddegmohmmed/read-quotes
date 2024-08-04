@@ -296,7 +296,22 @@ export default function Home() {
                 —{currentQuote.bookTitle} by {currentQuote.Author}
               </Typography>
             </Paper>
-            
+
+            <Button
+          variant="contained"
+          color="secondary"
+          onClick={handleUpload}
+          sx={{
+            borderRadius: '20px',
+            padding: '10px 20px',
+            textTransform: 'none',
+            fontSize: '13px',
+            marginTop: '10px',
+          }}
+        >
+          Import CSV Quotes
+        </Button>
+        
             <Button
               variant="contained"
               onClick={handleChangeQuote}
@@ -327,10 +342,12 @@ export default function Home() {
           >
             © {new Date().getFullYear()} Siddeg Omer. All rights reserved.
           </Typography> 
+
+          
         </>
       )}
       <Analytics />
       <SpeedInsights />
     </Container>
-  );
+  )
 }
