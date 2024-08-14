@@ -1,6 +1,6 @@
 import csv
 
-input_file = 'what.txt'  # Update this path as needed
+input_file = 'howtonot.txt'  # Update this path as needed
 output_file = 'extracted_quotes.csv'
 
 def extract_book_info_and_quotes(content):
