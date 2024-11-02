@@ -1,2978 +1,870 @@
-5232705
+2612345
 indent:false
 trim:false
 #
-2620
-How to Not Die Alone, Logan Ury
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-1251
-1
-1996532479
-1668444665769
-
-
-2
-0
-0
-0
-#
-2621
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-1352
-2
-1996532479
-1668444675543
-
-
-1 
-0
-0
-0
-#
-2624
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-1642
-1
-1996532479
-1668444695070
-
-
-3
-0
-0
-0
-#
-2625
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-1715
-1
-1996532479
-1668444701033
-
-
-2
-0
-0
-0
-#
-2626
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-1766
-2
-1996532479
-1668444705520
-
-
-2 
-0
-0
-0
-#
-2627
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-1869
-1
-1996532479
-1668444715054
-
-
-3
-0
-0
-0
-#
-2628
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-1967
-1
-1996532479
-1668444727237
-
-
-2
-0
-0
-0
-#
-2629
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-2034
-1
-1996532479
-1668444734284
-
-
-1
-0
-0
-0
-#
-2630
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-2130
-1
-1996532479
-1668444741128
-
-
-1
-0
-0
-0
-#
-2632
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-2212
-1
-1996532479
-1668444752910
-
-
-1
-0
-0
-0
-#
-2633
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-2322
-2
-1996532479
-1668444759957
-
-
-1 
-0
-0
-0
-#
-2634
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-2421
-1
-1996532479
-1668444767107
-
-
-3
-0
-0
-0
-#
-2635
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-2528
-1
-1996532479
-1668444772877
-
-
-2
-0
-0
-0
-#
-2636
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-2592
-1
-1996532479
-1668444778319
-
-
-1
-0
-0
-0
-#
-2637
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-2640
-2
-1996532479
-1668444784993
-
-
- 3
-0
-0
-0
-#
-2639
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-3011
-11
-1996532479
-1668444914251
-
-10
-_________ _
-0
-0
-0
-#
-2641
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-4886
-11
-1996532479
-1668445133574
-
-
-The Hesitat
-0
-0
-0
-#
-2642
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-8
-0
-1386
-147
-1996532479
-1668445683125
-
-
-Romanticizers believe that love is something that happens to you, and that the reason they’re single is they just haven’t met the right person yet.
-0
-0
-0
-#
-2643
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-8
-0
-2166
-292
-1996532479
-1668445742567
-
-
-When it comes to romantic relationships, psychologist Renae Franiuk found that people have either a soul mate mindset, the belief that relationship satisfaction comes from finding the right person; or a work-it-out mindset, the belief that relationship success derives from putting in effort.
-0
-0
-0
-#
-2644
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-8
-0
-3174
-97
-1996532479
-1668445868382
-
-
-People with soul mate beliefs tend to have a very specific vision of how their partner will look.
-0
-0
-0
-#
-2645
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-8
-0
-3553
-228
-1996532479
-1668445924368
-
-
-Since Romanticizers are confident they know what their future partner will look like, when they meet someone who doesn’t match that image, they won’t give that person a chance. They end up missing out on great potential matches.
-0
-0
-0
-#
-2646
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-8
-0
-4348
-333
-1996532479
-1668445985517
-
-
-those with the work-it-out mindset believe that relationships take effort, that love is an action you take, not something that happens to you. People with the work-it-out mindset tend to fare better in relationships because when they stumble, they put in the work needed to get the relationship back on track, rather than giving up.<BR>
-0
-0
-0
-#
-3087
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-4
-0
-742
-94
-1996532479
-1678187520224
-
-
-Intentional Love asks you to view your love life as a series of choices rather than accidents.
-0
-0
-0
-#
-3088
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-4
-0
-1007
-460
-1996532479
-1678188667402
-
-
-Great relationships are built, not discovered. A lasting relationship doesn’t just happen. It is the culmination of a series of decisions, including when to get out there, whom to date, how to end it with the wrong person, when to settle down with the right one, and everything in between. Make good decisions, and you propel yourself toward a great love story. Make bad ones, and you veer off course, doomed to repeat the same harmful patterns over and over.<BR>
-0
-0
-0
-#
-3089
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-6
-0
-2961
-145
-1996532479
-1678224329728
-
-
-while people crave choice, too many options can make us feel less happy and more doubtful of our decisions. They call this the paradox of choice.
-0
-0
-0
-#
-3090
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-369
-122
-1996532479
-1678226049247
-
-
-dating blind spots—patterns of behavior that hold them back from finding love, but which they can’t identify on their own.
-0
-0
-0
-#
-3091
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-1444
-2
-1996532479
-1678226131587
-
-
-3　
-0
-0
-0
-#
-3092
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-1560
-1
-1996532479
-1678226154188
-
-
-2
-0
-0
-0
-#
-3093
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-2181
-2
-1996532479
-1678226208475
-
-
-3　
-0
-0
-0
-#
-3095
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-2863
-11
-1996532479
-1678226347910
-
-10 points
-_________ _
-0
-0
-0
-#
-3096
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-3161
-6
-1996532479
-1678226441578
-
-16
-______
-0
-0
-0
-#
-3097
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-7
-0
-4298
-57
-1996532479
-1678226582318
-
-
-The Hesitater has unrealistic expectations of themselves.
-0
-0
-0
-#
-3099
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-8
-0
-12042
-99
-1996532479
-1678458990212
-
-
-No relationship is easy all the time. Even the healthiest, most rewarding marriages require effort.
-0
-0
-0
-#
-3100
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-8
-0
-12143
-448
--6706569
-1678459033025
-
-
-Finding someone can be hard, but often the real challenge comes later. The hard part is the daily work you put in to grow and sustain a great relationship. The hard part is feeling excited to see your spouse at the end of the day, after thirty years and two kids, long after the honeymoon period is over. The hard part is remembering why you love someone during all the logistical, financial, emotional, and spiritual challenges life throws at you.
-1
-0
-0
-#
-3104
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-8
-0
-18801
-158
-1996532479
-1678466929206
-
-
-Our mindset matters! The ability to shift your mindset from soul mate to work-it-out beliefs could mean the difference between finding a life partner or not. 
-0
-0
-0
-#
-3239
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-9
-0
-11437
-1164
-1996532479
-1678861662438
-
-
-You can learn to date like a Satisficer by studying the decision-making riddle known as the Secretary Problem. Imagine you are hiring a secretary. And let’s be sure to make him a male secretary, because I know you were envisioning a woman and #fuckthepatriarchy. There are a hundred possible candidates whom you must interview one by one. After each interview, you decide whether to hire that person or keep looking. If you reject a person, he’s gone. You can’t change your mind later and hire him.<BR><BR>How should you maximize your chances of picking the best candidate? You don’t want to decide too early in the process, because you might miss out on a strong candidate at the end of the line. But you don’t want to make it too far without choosing, because what if the final options aren’t very good? It turns out there’s a mathematically correct answer to this problem. You should interview 37 percent of the candidates and then pause. Identify the best person from this first group. Now you have a meaningful benchmark. After evaluating the first 37 percent, you should be prepared to hire the first candidate who is better than the standout from the first group.
-0
-0
-0
-#
-3240
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-9
-0
-12883
-704
-1996532479
-1678861863308
-
-
-Instead of thinking about the total number of people you might date, consider how long you’re likely to actively look for a partner. Apply the rule of 37 percent to that time period. In the book Algorithms to Live By, authors Brian Christian and Tom Griffiths discuss a single man who wants to get married. “Assuming that his search would run from ages eighteen to forty, the 37% rule gave age 26.1 as the point at which to switch from looking to leaping.”<BR><BR>That means that by the age of 26.1, he should set a meaningful benchmark from his first 8.1 years of dating—that is, the single best person he’s dated thus far. He should then marry the next person he meets whom he likes more than that benchmark.
-0
-0
-0
-#
-3242
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-9
-0
-15060
-410
-1996532479
-1678862463304
-
-
-Now it’s your turn. To determine your dating window, count the number of years from when you started dating to when you’d like to enter a long-term relationship. Now, what’s 37 percent of that number? Add that to the age when you started dating. That’s your 37 percent mark. If you’re in your thirties, you’ve probably already passed it. Complete the assignment I gave Doug to determine your benchmark partner.
-0
-0
-0
-#
-3243
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-9
-0
-15472
-390
-1996532479
-1678862492128
-
-
-Don’t worry. I’m not telling you to marry the next person you go out with, nor am I implying that it’s too late if you’re past the 37 percent mark. I’m merely suggesting that you likely already have enough data to generate a reasonable, well-informed benchmark. You do not need more research. The next time you meet someone whom you like as much or more than that benchmark, commit to them.
-0
-0
-0
-#
-3244
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-9
-0
-19373
-194
-1996532479
-1678862880955
-
-
-Maximizers obsess over making the right decision. They want to explore every possible option before they make a choice. Even when they decide, they constantly wonder what they’re missing out on.
-0
-0
-0
-#
-3245
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-9
-0
-19568
-185
-1996532479
-1678862896587
-
-
-Satisficers figure out what they want and stop looking once they’ve met their criteria. They don’t settle, they merely stop worrying what else is out there once they’ve made a decision.
-0
-0
-0
-#
-3246
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-10
-0
-3148
-587
-1996532479
-1678896198421
-
-
-For Hesitaters, there’s a story in your head that one day you’ll wake up and feel ready. That story is fiction. That’s not how life works. Everyone feels awkward sometimes. Most people feel nervous in high-pressure situations. Many of us have a part of ourselves we don’t want to reveal to others. And yet these very same people still go out on dates and kiss people and fall in love and break up and fall in love again and get married. Eventually, you just have to get out there and start dating, imperfect as you are. Everyone else is imperfect, too—even the person you’ll end up with.
-0
-0
-0
-#
-3247
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-10
-0
-5912
-150
-1996532479
-1678896841062
-
-
-<BR>The first opportunity cost is losing the chance to learn. You can’t figure out what you like (and what you don’t) if you don’t date different people.
-0
-0
-0
-#
-3248
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-10
-0
-6671
-116
-1996532479
-1678896895739
-
-
-If you’re not going on dates, you’re not getting closer to knowing the kind of person you want to be with long term.
-0
-0
-0
-#
-3249
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-10
-0
-7734
-263
-1996532479
-1678897017076
-
-
-Hesitaters who delay getting out there also miss the opportunity to improve their dating skills. I’m constantly surprised by how many of my clients think they should naturally know how to date. Dating is hard! And it takes time to master, just like anything else.
-0
-0
-0
-#
-3250
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-10
-0
-9436
-317
-1996532479
-1678897190762
-
-
-It’s the same with dating. You need to practice asking interesting questions, expressing yourself in a compelling way, and going in for a first kiss. Those are your reps. And you can’t work on any of these skills if you’re sitting around by yourself, “preparing.” The only way to get better at it is to actually date.
-0
-0
-0
-#
-3251
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-10
-0
-12278
-210
-1996532479
-1678897560901
-
-
-Pay attention the next time you’re having dinner with a friend: How much are you focusing inward (How am I coming across?) versus really listening and being curious (What is this person trying to communicate?)?
-0
-0
-0
-#
-3253
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-11
-0
-3132
-24
-1996532479
-1679004827737
-
-
-Attached, by Amir Levine
-0
-0
-0
-#
-3254
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-11
-0
-10302
-456
-1996532479
-1679150674401
-
-
-People with a secure attachment style make ideal partners. They’re reliable and trustworthy. They tend to avoid drama and, if not, are able to defuse it when they see it coming. They’re flexible, forgiving, and good at communicating. They behave consistently. They create healthy boundaries. They’re comfortable with intimacy. People with secure-attachment styles end up reporting higher levels of relationship satisfaction than avoidant or anxious folks.”
-0
-0
-0
-#
-3255
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-11
-0
-11914
-384
-1996532479
-1679150909426
-
-
-You may be anxiously attached if you crave closeness but are insecure about your relationship’s future and your partner’s interest in you. You may be avoidantly attached if you feel uncomfortable when things get too close, and you value freedom over connection. You may be secure if you are comfortable with intimacy, spending time alone, and don’t often worry about the relationship.
-0
-0
-0
-#
-3256
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-11
-0
-12300
-100
--2001665793
-1679151004937
-
-
-You can take the online quiz linked from my website, loganury.com, to confirm your attachment style.
-0
-0
-0
-#
-3261
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-11
-0
-13118
-215
-1996532479
-1679551404779
-
-
-I did my best to help her see the situation differently. This guy was trying to be helpful because he liked her. It was a secure act and not a pathetic one. We worked on helping her break that anxious-avoidant loop.
-0
-0
-0
-#
-3262
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-11
-0
-13624
-168
-1996532479
-1679551448688
-
-
-Try to date secure partners. The ones who text when they say they will. Who let you know what’s on their mind. Who don’t play games and avoid or even de-escalate drama.
-0
-0
-0
-#
-3263
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-11
-0
-14607
-281
-1996532479
-1679551624076
-
-
-And for those of you who are avoidantly attached, pay attention to your feelings when you sense yourself withdrawing. Learn to ask for space instead of disappearing into space. Or when you sense yourself focusing on your partner’s shortcomings and wanting to leave because of them,
-0
-0
-0
-#
-3264
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-11
-0
-14916
-155
-1996532479
-1679551627648
-
-
-Practice looking for the positive qualities instead. Remember that no one is perfect, and if you leave, the next person you meet won’t be perfect, either.<BR>
-0
-0
-0
-#
-3266
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-11
-0
-16430
-227
-1996532479
-1679638134505
-
-
-Attachment theory is a popular framework for understanding relationships. It can help explain why you’re attracted to certain people, why past relationships haven’t worked out, and why you’re trapped in a pattern of bad habits.
-0
-0
-0
-#
-3267
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-4134
-362
-1996532479
-1679652449120
-
-
-the difference between a love story and a life story. There are many people with whom you can share a tryst but far fewer with whom you can build a life. When you’re thinking about who to marry, she says, don’t ask yourself: What would a love story with this person look like? Instead, ask: Can I make a life with this person? That’s the fundamental distinction.
-0
-0
-0
-#
-3268
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-5147
-125
-1996532479
-1679652544395
-
-
-You should deliberately change the way you evaluate potential partners around six to eight years before you want to have kids
-0
-0
-0
-#
-3269
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-10127
-83
-1996532479
-1679653519969
-
-
-Nothing in life is as important as you think it is while you are thinking about it.
-0
-0
-0
-#
-3270
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-11338
-206
-1996532479
-1679670393414
-
-
-low-income couples were far more dissatisfied with their relationship than middle-income couples. In fact, low-income couples felt about as unhappy as divorced couples did in the month before they broke up.
-0
-0
-0
-#
-3271
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-11917
-172
-1996532479
-1679670438399
-
-
-couples who can afford to outsource time-intensive tasks like cooking and cleaning enjoy greater relationship satisfaction because they can spend more quality time together
-0
-0
-0
-#
-3272
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-12944
-247
-1996532479
-1679670883792
-
-
-No matter how wonderful something is, the novelty eventually wears off, and we stop paying much attention to it. And once we stop paying attention to it, it doesn’t bring us the same level of joy, or misery, that it did when we were focused on it.
-0
-0
-0
-#
-3273
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-13766
-365
-1996532479
-1679671431761
-
-
-When we make a decision, we tend to focus on the immediate joy or misery it will bring. But remember: We are bad fortune-tellers! We often can’t account for how those feelings will change over time. Money matters, but only up to a certain extent. You’re not wrong for considering that element of your future relationship, but don’t prioritize wealth above all else.
-0
-0
-0
-#
-3276
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-16040
-239
-1996532479
-1679731121983
-
-
-Lust is incredibly intense in the beginning and then fades. When we fall in love, it feels like we’re addicted to the other person, as if they’re a drug. Fisher found that cocaine and falling in love light up the same regions of the brain.
-0
-0
-0
-#
-3277
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-17698
-511
-1996532479
-1679731436957
-
-
-<BR>Finally, remember what we just learned about adaptation. Even if you marry the most attractive person, eventually, you’ll get used to how they look. That initial pleasure will fade. A big part of our sex drive is associated with novelty. So no matter how hot your partner is, it’s likely that your sexual interest in them will decrease over time, simply because they are no longer new to you. To paraphrase some Internet wisdom: “For every hot person, there is someone out there tired of having sex with them.”
-1
-0
-0
-#
-3278
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-18383
-244
-1996532479
-1679731476431
-
-
-Physical attraction can obscure long-term compatibility. Pay attention to whether or not you’re attracted to someone and focus less on how society would evaluate that person’s looks. Don’t prioritize lust over more important long-term factors.<BR>
-1
-0
-0
-#
-3280
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-19513
-129
-1996532479
-1679731566108
-
-
-But that assumption is wrong. Research tells us that similar personalities are not a predictor of long-term relationship success.
-0
-0
-0
-#
-3281
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-19165
-347
-1996532479
-1679731645955
-
-
-When we’re older and thinking about long-term relationships and, eventually, marriage, the process is more like a merger: two complete beings coming together. The older we get, the more set in our ways we are, and the more we crave someone who will easily fit into our lives. We assume that the more similar we are, the easier the merger will be.<BR>
-1
-0
-0
-#
-3283
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-19728
-129
-1996532479
-1679731669831
-
-
-“There is no correlation between how satisfied or how happy you are with a relationship and how similar your personalities are.” 
-0
-0
-0
-#
-3284
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-19988
+2683
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+29
+0
+4745
 76
 1996532479
-1679731796689
+1669416581179
 
 
-The question is: Would you really want to date yourself? I know I wouldn’t!<BR>
-1
+Therapists tell their patients: Follow your envy—it shows you what you want.
+0
 0
 0
 #
-3285
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
+2983
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+33
 0
-20108
-212
+4457
+312
 1996532479
-1679731820241
+1674466964119
 
 
-He’s an event promoter with a big personality. He was dating someone calm and caring who liked to be in bed before ten p.m. on most nights. He wondered, Wouldn’t my life be better if I dated someone more like me?
-1
+he suggested that by Google-stalking Boyfriend I was holding on to a future that had been canceled. I was watching Boyfriend’s future unfold while I stayed locked in the past. I’d need to accept that his future and mine, his present and mine, were now separate and that all we had left in common was our history.
+0
 0
 0
 #
-3286
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
+2986
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+34
 0
-20321
-649
+4696
+1424
 1996532479
-1679731838222
+1674471393280
 
 
-<BR>I sat him down and told him that two of him would be too much for one room, let alone one relationship! They’d fight to be the center of attention. “Do you know the show The Amazing Race?” I asked him. The show follows couples or pairs of friends or family members who travel to exotic locations to complete missions. “The pairs that are too similar fight,” I said. “They get stuck on the same things. The most successful duos complement each other. They don’t have identical traits. When they miss a flight, one partner finds another route and soothes the other’s panic. That’s what makes them win. You want the same thing with your life partner.”
-1
+What most people mean by type is a sense of attraction—a type of physical appearance or a type of personality turns them on. But what underlies a person’s type, in fact, is a sense of familiarity. It’s no coincidence that people who had angry parents often end up choosing angry partners, that those with alcoholic parents are frequently drawn to partners who drink quite a bit, or that those who had withdrawn or critical parents find themselves married to spouses who are withdrawn or critical.<BR><BR>Why would people do this to themselves? Because the pull toward that feeling of “home” makes what they want as adults hard to disentangle from what they experienced as children. They have an uncanny attraction to people who share the characteristics of a parent who in some way hurt them. In the beginning of a relationship, these characteristics will be barely perceptible, but the unconscious has a finely tuned radar system inaccessible to the conscious mind. It’s not that people want to get hurt again. It’s that they want to master a situation in which they felt helpless as children. Freud called this “repetition compulsion.” Maybe this time, the unconscious imagines, I can go back and heal that wound from long ago by engaging with somebody familiar—but new. The only problem is, by choosing familiar partners, people guarantee the opposite result: they reopen the wounds and feel even more inadequate and unlovable.
+0
 0
 0
 #
-3288
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
+2987
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+35
 0
-21175
-60
+1912
+533
 1996532479
-1679731892843
+1674476918697
 
 
-Find someone who complements you, not your personality twin.
+At least once a session, I bring up our pattern: my trying to connect with him; his trying to flee. He may be resistant to acknowledging it now, but I welcome his resistance because resistance is a clue to where the crux of the work lies; it signals what a therapist needs to pay attention to. During training, whenever we interns felt frustrated by resistant patients, our supervisors would counsel, “Resistance is a therapist’s friend. Don’t fight it—follow it.” In other words, try to figure out why it’s there in the first place.
 0
 0
 0
 #
-3289
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
+2988
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+35
 0
-21436
-172
+5307
+8
 1996532479
-1679732055989
+1674477430146
 
-
-married couples who had been together for an average of twenty years, they found that couples with similar personalities aren’t any more satisfied with their relationships.
+بقايا 
+remnants
 0
 0
 0
 #
-3290
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
+2990
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+35
 0
-20999
-95
+11698
+703
 1996532479
-1679748523066
+1674478437999
 
 
-he worked on appreciating his partner’s differences rather than wishing she were more like him.
+This felt like a classic example of projective identification. In projection, a patient attributes his beliefs to another person; in projective identification, he sends them into another person. For instance, a man may feel angry at his boss at work, then come home and say to his spouse, “You seem angry.” He’s projecting, because the spouse isn’t angry. In projective identification, on the other hand, the man may feel angry at his boss, return home, and essentially insert his anger into his partner, actually making the partner feel angry. Projective identification is like tossing a hot potato to the other person. The man no longer has to feel his anger, since it’s now living inside his partner.
 0
 0
 0
 #
-3295
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
+2992
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+38
 0
-24582
-575
+6511
+122
 1996532479
-1680177943369
+1674510014692
 
 
-Here’s the key: It’s fine to have different interests, so long as the time you spend pursuing your favorite activities doesn’t preclude you from investing in the relationship. If you love wine and your partner couldn’t care less about it, that’s okay; you don’t need to marry a sommelier. What matters is that when you drink wine, or go on a trip to Napa to try a new prized cabernet sauvignon, your partner doesn’t try to make you feel guilty or say something like “Why do you always have to drink?” A good relationship has space for different people with different hobbies.
-1
+People with factitious disorder have a need to be thought of as sick and intentionally go to great lengths to appear ill. 
+0
 0
 0
 #
-3296
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
+3019
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+39
 0
-26749
-672
+8264
+3
 1996532479
-1680179073032
+1676321197570
 
 
-Consider what roles you’ve asked your partner to play that they are uninterested in fulfilling: for example, insisting they go to a party with you when they much prefer smaller gatherings. Or wishing your partner would suggest visits to museums and art galleries when it’s just not their thing. Remember, just because they don’t share all your interests doesn’t make them a bad partner! And for those roles your partner isn’t suited for, find a friend or family member who can fill in. In the long run, this will make you happier because your needs are being met. And it will make your partner happier because they can focus on roles that match their skills and interests.
-1
-0
-0
-#
-3298
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-28308
-80
-1996532479
-1680179885602
-
-
- If you want to find a Life Partner, look for someone with the following traits:
+She
 0
 0
 0
 #
-3299
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
+3022
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+40
 0
-28393
-32
-1996532479
-1680179898564
-
-
-Emotional Stability and Kindness
-0
-0
-0
-#
-3300
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-28521
-162
-1996532479
-1680179943311
-
-
-research on what matters when choosing a partner. He found that emotional stability and kindness are two of the most important and yet underrated characteristics.
-0
-0
-0
-#
-3301
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-28684
-210
-1996532479
-1680179967429
-
-
-He defines emotional stability as being able to self-regulate and not give in to anger or impulsivity. The combined emotional stability of a couple predicts the satisfaction and stability of their relationship.
-0
-0
-0
-#
-3302
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-28938
-294
-1996532479
-1680181211236
-
-
-Kind partners are awesome. They’re generous, they’re empathic, and they want to be supportive of you.” Kindness and emotional stability also allow us to treat our partner with care and compassion, which research from John and Julie Gottman suggests is the key to long-term relationship success.
-0
-0
-0
-#
-3303
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-29265
-195
-1996532479
-1680181231701
-
-
-<BR>You can get a sense of how kind someone is by paying attention to how they treat people from whom they don’t need anything. Are they nice to the waiter? Do they give up their seat on the subway?
-0
-0
-0
-#
-3304
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-29594
-158
-1996532479
-1680181290800
-
-
-One way to get a sense of someone’s emotional stability is to pay attention to how they respond to stressful situations. Do they freak out or keep their cool?
-0
-0
-0
-#
-3305
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-29753
-130
-1996532479
-1680181682506
-
-
-Emotionally stable partners are measured in their responses. They take time to thoughtfully respond rather than impulsively react.
-0
-0
-0
-#
-3309
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-30836
-25
-1996532479
-1680181791970
-
-
-Will He Hold Your Purse?”
-0
-0
-0
-#
-3310
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-31505
-98
-1996532479
-1680182342360
-
-
-But what you really want to look for is somebody who will hold your purse in the cancer clinic.’ ”
-0
-0
-0
-#
-3311
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-31943
-372
-1996532479
-1680182447464
-
-
-One easy way to estimate someone’s loyalty is to see if they have friends from different stages of their lives. How many old friendships have they carried with them over the years? Did they ditch their college bestie when they got depressed, or do they still meet up for monthly movie matinees? Do people from their past seem to rely on them for companionship and support?
-0
-0
-0
-#
-3312
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-32453
-45
-1996532479
-1680182470383
-
-
-in general, old friendships indicate loyalty.
-0
-0
-0
-#
-3313
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-32503
-16
-1996532479
-1680182481619
-
-
-A Growth Mindset
-0
-0
-0
-#
-3314
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-32628
-258
-1996532479
-1680183129068
-
-
-People with a growth mindset believe that they can improve their intelligence and skills. They love to learn. They’re motivated by challenges and see failure as a sign that they need to stretch their abilities. They’re resilient and comfortable taking risks.
-0
-0
-0
-#
-3315
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-33061
-379
-1996532479
-1680183186206
-
-
-You want to align yourself with someone who has a growth mindset because when problems arise, which they inevitably will, you’ll want a partner who will rise to the occasion, not throw up their hands in defeat. A person with a growth mindset is much more likely to buckle down and work on improving things rather than give up on the relationship and assume things can’t be fixed.
-0
-0
-0
-#
-3316
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-34033
-43
-1996532479
-1680183234451
-
-
-Personality That Brings Out the Best in You
-0
-0
-0
-#
-3323
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-34078
-129
-1996532479
-1680374648759
-
-
-In the end, a relationship is not about who each of you is separately, it’s about what happens when the two of you come together.
-0
-0
-0
-#
-3325
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-34349
-114
-1996532479
-1680374833712
-
-
-You must understand what qualities they bring out in you, because this is who you’ll be whenever you’re with them.
-0
-0
-0
-#
-3326
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-35557
-266
-1996532479
-1680467675905
-
-
-Key tip for your dating search<BR><BR>Pay attention to how you feel when you’re around this person or right after you finish spending time together. Energized? Deflated? Bored? Challenged? Happy? Desired? Smart? Stupid? Select someone who brings out the best side of you.<BR>
-0
-0
-0
-#
-3327
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-35824
-181
-1996532479
-1680467692698
-
-
-It could also be helpful to get a third-party view by going out with a group of friends. Instead of asking, “What did you think of him?” ask, “What did you think of me around him?”<BR>
-0
-0
-0
-#
-3328
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-36006
-23
-1996532479
-1680467699904
-
-
-5) Skills to Fight Well
-0
-0
-0
-#
-3329
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-37172
-192
-1996532479
-1680467986965
-
-
-The first step in fighting well is understanding that there are two types of problems in relationships: solvable problems and perpetual ones—unsolvable, permanent features of your partnership.
-0
-0
-0
-#
-3330
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-36223
-149
-1996532479
-1680468002738
-
-
-<BR>Fights—anything from a small disagreement to a screaming match—are a chance to deal with things as they come up instead of letting resentment build.
-0
-0
-0
-#
-3331
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-38129
-140
-1996532479
-1680468096133
-
-
-The goal is not to convince each other to change or even to come to an agreement—it’s to find a productive way to live with this difference.
-0
-0
-0
-#
-3332
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-38353
-110
-1996532479
-1680468189266
-
-
-“When choosing a long-term partner, you will inevitably be choosing a particular set of unresolvable problems.
-0
-0
-0
-#
-3333
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-38465
-181
-1996532479
-1680468205535
-
-
-The goal isn’t to find someone with whom you don’t fight. It’s to choose a partner with whom you fight well, and who doesn’t make you worry that the fight will end the relationship.
-0
-0
-0
-#
-3334
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-38647
-81
-1996532479
-1680468218388
-
-
-The second element to fighting well is being able to recover from a disagreement.
-0
-0
-0
-#
-3335
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-38755
-78
-1996532479
-1680468300965
-
-
-“repair attempts,” statements or actions that prevent a fight from escalating.
-0
-0
-0
-#
-3336
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-39024
-297
-1996532479
-1680468309167
-
-
-Remember that you’ll inevitably have disagreements with whomever you choose. Pay attention to how you fight. Are you able to get your point across? Do you feel heard? Does your partner make repair attempts to de-escalate the disagreement? The goal is to fight well, not to avoid fights altogether.
-0
-0
-0
-#
-3337
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-39323
-42
-1996532479
-1680468341803
-
-
-6) Ability to Make Hard Decisions with You
-0
-0
-0
-#
-3338
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-39623
-65
-1996532479
-1680468352329
-
-
-You want to be with someone who can make hard decisions with you.
-0
-0
-0
-#
-3339
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-40269
-113
-1996532479
-1680468450848
-
-
-The best way to know what it will be like to make decisions with someone is to actually make decisions together. 
-0
-0
-0
-#
-3340
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-48828
-145
-1996532479
-1680469102780
-
-
-A great long-term partner is loyal, kind, and emotionally stable, a person with whom you can grow, make hard decisions, and fight constructively.
-0
-0
-0
-#
-3341
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-12
-0
-48974
-188
-1996532479
-1680469113119
-
-
-In the end, a relationship is about what happens when the two of you come together. Focus on the side of you this person brings out, because that’s who you’ll be whenever you’re with them.
-0
-0
-0
-#
-3342
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-14
-0
-8976
-120
-1996532479
-1680473539635
-
-
-a related concept called evaluability: The easier it is to compare certain traits, the more important those traits seem.
-0
-0
-0
-#
 3343
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-14
-0
-7239
-137
+670
 1996532479
-1680473918276
+1676418246708
 
 
-Our brains focus on what’s measurable and easily comparable. Apps display superficial traits, making us value these qualities even more.<BR>
+But when I’m in Wendell’s office, I forget all this, along with everything else I’ve learned about advice-giving over the years: that the information the patient presents to you is distorted through a particular lens; that the presentation of the information will change over time as it becomes less distorted; that the dilemma may even be about something entirely different that has yet to be uncovered; that the patient is sometimes gunning for you to support a particular choice and this will become more clear as your relationship develops; and that the patient wants others to make decisions so that she doesn’t have to take responsibility if things don’t work out.
 0
 0
 0
 #
-3344
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-14
-0
-9242
-168
--3368512
-1680475686972
-
-
-You can go on a date with one of these two single men. One guy is five-nine and one is five-ten, but the shorter one makes more money. Who do you want to go out with?”<BR>
-0
-0
-0
-#
-3345
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-14
-0
-9510
-183
--3368512
-1680475708388
-
-
-If you decided to stick around, I’d follow up with another question: “How much more money per year would a shorter guy have to make for you to find him as attractive as a taller man?”
-0
-0
-0
-#
-3346
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-14
-0
-10064
-85
-1996532479
-1680475756360
-
-
-a man has to earn $40,000 more each year to be as desirable as a man one inch taller.
-0
-0
-0
-#
-3348
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-14
-0
-10166
-143
--3368512
-1680475772524
-
-
-Evaluability helps us understand why. In real life, you may meet guys who are five-nine and five-ten and barely notice their height difference.
-0
-0
-0
-#
-3349
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-14
-0
-12868
-72
-1996532479
-1680476057359
-
-
-Most of us have no idea what kind of partner will fulfill us long term.<BR>
-0
-0
-0
-#
-3350
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-14
-0
-12352
-47
-1996532479
-1680476066247
-
-
-We think we know what we want, but we’re wrong.
-0
-0
-0
-#
-3351
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-14
-0
-16527
-264
-1996532479
-1680476421063
-
-
-The apps show us people who meet our initial criteria—the type of people we think we want. If you believe that you’d hate dating a woman who’s taller than you are, and the apps offer you only short women to choose from, you never get the chance to be proved wrong.
-0
-0
-0
-#
-3352
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-14
-0
-19804
-285
-1996532479
-1680476631968
-
-
-the paradox of choice: We assume that more choice will make us happier, but that’s often not the case. In fact, too many options make us less happy, in part because of choice overload. It can feel so overwhelming to compare our options that we may give up and make no decision at all.<BR>
-0
-0
-0
-#
-3357
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-15
-0
-2852
-324
-1996532479
-1680518940166
-
-
- I’d designed called the Event Decision Matrix. It helps busy people strategically choose the best events. Every time you hear about a new event, you plot it on the matrix using these two dimensions:<BR><BR>How likely is it that I’ll interact with other people at this event?<BR>How likely is it that I’ll enjoy myself at this event?
-0
-0
-0
-#
-3358
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-15
-0
-6002
-93
-1996532479
-1680524303210
-
-
-publicly committing to a goal makes people more likely to accomplish what they set out to do.
-0
-0
-0
-#
-3373
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-16
-0
-11013
-9
--2001665793
-1680803626104
-
-
- Good One
-0
-0
-0
-#
-3374
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-16
-0
-27315
-140
-1996532479
-1680827207433
-
-
- “I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.”
-0
-0
-0
-#
-3375
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-16
-0
-27456
-70
-1996532479
-1680878771315
-
-
-Instead of trying to be interesting, make the person feel interesting.
-0
-0
-0
-#
-3376
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-16
-0
-27649
-167
-1996532479
-1680878857283
-
-
-Most of us listen in order to formulate our own responses, which puts the focus back on us. The goal is to understand rather than merely waiting for your turn to talk.
-0
-0
-0
-#
-3377
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-16
-0
-27818
-327
-1996532479
-1680878878630
-
-
-You can become a better conversationalist by learning to give support responses rather than shift responses. Sociologist Charles Derber identified a shift response as a moment in which you shift the focus of the conversation back to yourself. A support response, on the other hand, encourages the speaker to continue the story.
-0
-0
-0
-#
-3378
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-16
-0
-28536
-174
-1996532479
-1680878917493
-
-
-Support responses indicate that you’re invested in their story and want to hear more. They make your date feel appreciated and amplify the connection between the two of you.<BR>
-0
-0
-0
-#
-3379
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-16
-0
-29456
-19
-1996532479
-1680879085259
-
-
-8) Limit phone use.
-0
-0
-0
-#
-3380
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-16
-0
-31415
-245
-1996532479
-1680916619615
-
-
-That’s because of a phenomenon called the peak-end rule: When assessing an experience, people judge it based largely on how they felt at the most intense moment and at the end. Their memory isn’t an average of their minute-by-minute experiences.
-0
-0
-0
-#
-3381
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-16
-0
-31662
-160
-1996532479
-1680916633050
-
-
-So order dessert at the end of the meal. Give the other person a meaningful compliment before you head your separate ways. Take advantage of the peak-end rule.<BR>
-0
-0
-0
-#
-3382
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-16
-0
-32726
-19
--2001665793
-1680917154426
-
-
-The Post-Date Eight
-0
-0
-0
-#
-3383
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-18
-0
-1279
-60
-1996532479
-1680919185401
-
-
-Do not judge others the way you would not want to be judged.
-0
-0
-0
-#
-3384
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-18
-0
-3961
-66
-1996532479
-1680920113879
-
-
-Seeing the positives in life is a muscle, a skill you can develop.
-0
-0
-0
-#
-3385
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-18
-0
-4089
-178
-1996532479
-1680920140186
-
-
-gratitude journals found that simply writing down three new things you are grateful for, every night for three weeks, will start to change the way your brain perceives the world.
-0
-0
-0
-#
-3386
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-18
-0
-4268
-188
-1996532479
-1680920143925
-
-
-The exercise trains you to notice things you might have otherwise missed, like how wonderful it is to catch the bus right before it leaves or how good it feels to laugh with your coworker.
-0
-0
-0
-#
-3409
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-12844
-45
-1996532479
-1680996776018
-
-
-EXERCISE: Critical Conversation Planning Doc<BR>
-0
-0
-0
-#
-3410
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-12890
+3023
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+40
+0
+4683
 89
 1996532479
-1680996783920
+1676418351887
 
 
-1. What’s your goal for this conversation? (In other words, what does success look like?)
+Who am I to make the important decisions in my own life? Am I really qualified for this?<BR>
 0
 0
 0
 #
-3411
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
+3024
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+40
 0
-13076
-49
+4773
+262
 1996532479
-1680996797770
+1676418388824
 
 
-What’s the core message you want to communicate?<BR>
+Everyone wages this internal battle to some degree: Child or adult? Safety or freedom? But no matter where people fall on those continuums, every decision they make is based on two things: fear and love. Therapy strives to teach you how to tell the two apart.<BR><BR> 
 0
 0
 0
 #
-3412
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
+3026
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+40
 0
-13262
-61
+6745
+543
 1996532479
-1680996808450
+1676466260508
 
 
-What tone do you want to use? What tone do you want to avoid?
+Sometimes people can’t identify their feelings because they were talked out of them as children. The child says, “I’m angry,” and the parent says, “Really? Over such a tiny thing? You’re so sensitive!” Or the kid says, “I’m sad,” and the parent says, “Don’t be sad. Hey, look, a balloon!” Or the child says, “I’m scared,” and the parent says, “There’s nothing to be worried about. Don’t be such a baby.” But nobody can keep profound feelings sealed up forever. Inevitably, when we least expect it—seeing a commercial, for instance—they escape.
 0
 0
 0
 #
-3413
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-13405
-41
-1996532479
-1680996815431
-
-
-How do you want to open the conversation?
-0
-0
-0
-#
-3414
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-13738
-23
-1996532479
-1680996987831
-
-
-What needs to be said? 
-0
-0
-0
-#
-3415
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-14259
-62
-1996532479
-1680997000548
-
-
-What are your concerns about how the other person will react?<BR>
-0
-0
-0
-#
-3416
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-14404
-34
-1996532479
-1680997008128
-
-
-What will you do if that happens? 
-0
-0
-0
-#
-3417
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-14951
+3028
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
 42
+0
+5170
+32
 1996532479
-1680997045150
+1676488485317
 
 
-How do you want to close the conversation?
+It was just one of those things.
 0
 0
 0
 #
-3418
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-23
+3029
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+42
 0
-1478
-56
+10552
+43
 1996532479
-1680998925917
+1676489073010
 
 
-Framing, I believe, is the key to getting over breakups.
+This was grief: You laugh. You cry. Repeat.
 0
 0
 0
 #
-3419
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-24
+3030
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+42
 0
-1334
-162
+15759
+40
 1996532479
-1680999110647
+1676490622212
 
 
-happiness and satisfaction of marriage has a tremendous impact on happiness, physical and mental health, life expectancy, wealth, and the well-being of children.<BR>
+forever changed and paradoxically alive.
 0
 0
 0
 #
-3420
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-24
-0
-3054
-84
-1996532479
-1680999359379
-
-
-Couples who date longer before getting married have better odds of staying together,
-0
-0
-0
-#
-3421
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-24
-0
-3276
-161
-1996532479
-1680999371784
-
-
-Couples who wait one to two years before getting engaged are 20 percent less likely to get divorced than those who wait under a year before putting a ring on it.
-0
-0
-0
-#
-3422
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-24
-0
-3438
-140
-1996532479
-1680999382096
-
-
-Couples who wait at least three years before engagement are 39 percent less likely to get divorced than those who get engaged before a year.
-0
-0
-0
-#
-3423
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-24
-0
-4150
-288
-1996532479
-1680999459450
-
-
-couples often make the same big mistake when considering marriage. They’re so fond of each other that they assume the other person wants the same things in life; therefore, they don’t set aside the time to talk explicitly about major decisions like where to live or if they want children.
-0
-0
-0
-#
-3424
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-24
-0
-5900
-66
-1996532479
-1680999653516
-
-
-PART 1: ALL ABOUT ME<BR><BR>EXERCISE: Answer the All About Me Questions<BR>
-0
-0
-0
-#
-3425
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-24
-0
-8465
-20
-1996532479
-1680999742196
-
-
-Part 2: All About Us
-0
-0
-0
-#
-3427
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-24
-0
-8571
-106
--2001665793
-1680999768897
-
-
-These are heavy conversations. Set aside three nights over a month. Don’t cram them all into one evening!<BR>
-0
-0
-0
-#
-3428
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-24
-0
-8678
-145
-1996532479
-1680999788428
-
-
-Your goal, throughout these conversations, is to stay curious. Discover what your partner wants and understand if this aligns with what you want.
-0
-0
-0
-#
-3429
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-24
-0
-8886
+3033
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
 44
+0
+3121
+5
 1996532479
-1680999796255
+1676654764856
 
 
-EXERCISE: Answer the All About Us Questions<BR>
+Until
 0
 0
 0
 #
-3430
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-24
+3037
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+44
 0
-9766
+8644
+58
+1996532479
+1676671395402
+
+
+herapy as an existential experience of self-understanding,
+0
+0
+0
+#
+3038
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+44
+0
+9124
+78
+1996532479
+1676671473022
+
+
+The four ultimate concerns are death, isolation, freedom, and meaninglessness.
+0
+0
+0
+#
+3039
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+45
+0
+12857
+118
+1996532479
+1676674102935
+
+
+Losing somebody you love is such a profoundly lonely experience, something only you endure in your own particular way.
+0
+0
+0
+#
+3042
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+46
+0
+3011
+6
+1996532479
+1676704311951
+
+
+People
+0
+0
+0
+#
+3044
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+47
+0
+1568
 26
 1996532479
-1680999914120
+1676798962915
 
 
-Conversation #1: The Past<BR>
+Man’s Search for Meaning. 
 0
 0
 0
 #
-3431
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-24
+3045
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+47
 0
-10244
-28
+2712
+146
 1996532479
-1680999942597
+1676799087489
 
 
-Conversation #2: The Present
+Between stimulus and response there is a space. In that space is our power to choose our response. In our response lies our growth and our freedom
 0
 0
 0
 #
-3432
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-24
+3046
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+48
 0
-11224
-28
+4655
+3
 1996532479
-1681000160484
+1676880828099
 
 
-Conversation #3: The Future<BR>
+She
 0
 0
 0
 #
-3433
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-25
+3052
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+48
 0
-543
-88
+5632
+45
 1996532479
-1681000443275
+1677105952719
 
 
-turns out the longer you’re married, the less happy you are. Happily ever after, my ass.
+Older adult (wisdom)—integrity versus despair
 0
 0
 0
 #
-3434
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-25
+3053
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+48
 0
-962
-168
+5775
+394
 1996532479
-1681000492232
+1677105999323
 
 
-Great relationships are created, not discovered. You can form a lasting bond by putting in the work. The opportunity is yours to build the relationship of your dreams.<BR>
+in later years, we experience a sense of integrity if we believe we have lived meaningful lives. This sense of integrity gives us a feeling of completeness so that we can better accept our approaching deaths. But if we have unresolved regrets about the past—if we think that we made poor choices or failed to accomplish important goals—we feel depressed and hopeless, which leads us to despair.
 0
 0
 0
 #
-4212
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
+3054
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+48
 0
-3129
-252
-1996532479
-1685862103854
-
-
-Write yourself a letter about why you’ve chosen to end things. In a few weeks, when you’re horny or lonely (or, in extreme cases, “hornly”) or want someone to feed your rabbit during a trip, you’ll remember exactly why you made this difficult decision.
-0
-0
-0
-#
-4213
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-4068
-128
--2001665793
-1685862151118
-
-
-EXERCISE: Record Your Reasons for the Breakup<BR><BR>In a notebook, write yourself a letter explaining why you’re making the decision.
-0
-0
-0
-#
-4214
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-7013
-117
-1996532479
-1685862720244
-
-
-Understand that the breakup will likely derail the night, their weekend, and beyond, so choose your timing carefully.
-0
-0
-0
-#
-4215
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-8096
-82
-1996532479
-1685863012592
-
-
-you’ll want to make a plan for what you’re going to say. How do you want to start?
-0
-0
-0
-#
-4216
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-8353
-352
-1996532479
-1685863229781
-
-
-I really care about you, and I don’t want to hurt you, but I think we need to break up. We both know this relationship hasn’t been working for a while. We tried to make it better, but at this point, I don’t think we can make the changes we need to. I want us to both find love and be happy, but I don’t think this relationship is going to give us that.
-0
-0
-0
-#
-4217
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-13128
-129
-1996532479
-1685863674902
-
-
-ve given this a lot of thought, and I really care about you as a person, but I don’t think this is the right relationship for me.
-0
-0
-0
-#
-4218
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-14141
-114
-1996532479
-1685863756493
-
-
-We’ve done the work to see if we can save this relationship, and I believe it’s best for both of us if we end it.”
-0
-0
-0
-#
-4219
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-14439
-274
-1996532479
-1685863876903
-
-
-If she asks what she did wrong: “This isn’t about anything you did or about who you are. It’s about what we create when we’re together. I don’t feel like this relationship brings out the best side of me. You didn’t do anything wrong, and I don’t want you to blame yourself.”
-0
-0
-0
-#
-4220
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-14714
-233
-1996532479
-1685863882762
-
-
-If she says mean things to me: “I understand that you’re mad and I’ve hurt you, so now you want to hurt me. You have every right to be upset, but I don’t want this to be more painful for us than it has to be. Please don’t attack me.”
-0
-0
-0
-#
-4221
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-20605
-57
-1996532479
-1685867310615
-
-
-Step 5: Make an immediate post-breakup plan for yourself.
-0
-0
-0
-#
-4222
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-26947
-151
-1996532479
-1685868837883
-
-
-For a while, you may experience a roller coaster of emotions, from extreme relief to extreme regret. “Why did I do this?” or “Am I going to die alone?”
-0
-0
-0
-#
-4223
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-27345
-190
-1996532479
-1685868860306
-
-
-You might also be feeling guilty for hurting someone you care about. Even if that happens, resist the urge to check in on your ex too much, especially in the first few weeks after a breakup.
-0
-0
-0
-#
-4224
-How to Not Die Alone
-/sdcard/Books/MoonReader/attachments/How_to_Not_Die_Alone_The_Surprising_Science_That_Will_Help_You_Find_Love_by_Logan_Ury.epub
-/sdcard/books/moonreader/attachments/how_to_not_die_alone_the_surprising_science_that_will_help_you_find_love_by_logan_ury.epub
-22
-0
-27618
+7844
 218
 1996532479
-1685868992047
+1677106160623
 
 
-There’s a terrible phenomenon of the Nice Breakup Person. We hear a lot about the horrible breakup person, but we don’t hear so much about the nice person who stays around, who keeps calling you on your birthday, etc.”
+It’s common for people with traumatic histories to expect disaster just around the corner. Instead of leaning into the goodness that comes their way, they become hypervigilant, always waiting for something to go wrong.
+0
+0
+0
+#
+3056
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+48
+0
+14092
+64
+1996532479
+1677132717439
+
+
+Forgiveness is a tricky thing, in the way that apologies can be.
+0
+0
+0
+#
+3057
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+48
+0
+14157
+311
+1996532479
+1677132738643
+
+
+Are you apologizing because it makes you feel better or because it will make the other person feel better? Are you sorry for what you’ve done or are you simply trying to placate the other person who believes you should be sorry for the thing you feel completely justified in having done? Who is the apology for?
+0
+0
+0
+#
+3058
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+48
+0
+14470
+158
+1996532479
+1677132764999
+
+
+There’s a term we use in therapy: forced forgiveness. Sometimes people feel that in order to get past a trauma, they need to forgive whoever caused the damage
+0
+0
+0
+#
+3059
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+48
+0
+14470
+745
+1996532479
+1677132806929
+
+
+There’s a term we use in therapy: forced forgiveness. Sometimes people feel that in order to get past a trauma, they need to forgive whoever caused the damage—the parent who sexually assaulted them, the burglar who robbed their house, the gang member who killed their son. They’re told by well-meaning people that until they can forgive, they’ll hold on to the anger. Granted, for some, forgiveness can serve as a powerful release—you forgive the person who wronged you, without condoning his actions, and it allows you to move on. But too often people feel pressured to forgive and then end up believing that something’s wrong with them if they can’t quite get there—that they aren’t enlightened enough or strong enough or compassionate enough.
+0
+0
+0
+#
+3060
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+48
+0
+15240
+43
+1996532479
+1677132858407
+
+
+You can have compassion without forgiving. 
+0
+0
+0
+#
+3062
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+48
+0
+19781
+564
+1996532479
+1677133223258
+
+
+I point out to her that pain can be protective; staying in a depressed place can be a form of avoidance. Safe inside her shell of pain, she doesn’t have to face anything, nor does she have to emerge into the world, where she might get hurt again. Her inner critic serves her: I don’t have to take any action because I’m worthless. And there’s another benefit to her misery: she may feel that she stays alive in her kids’ minds if they relish her suffering. At least somebody has her in mind, even in a negative way—and in this sense, she’s not completely forgotten
+0
+0
+0
+#
+3063
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+50
+0
+4181
+111
+1996532479
+1677134249926
+
+
+When people delude themselves into believing they have all the time in the world, she’s noticed, they get lazy.
+0
+0
+0
+#
+3064
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+52
+0
+366
+99
+1996532479
+1677284356004
+
+
+When we give our minds space to wander, they take us to the most unexpected and interesting places.
+0
+0
+0
+#
+3066
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+52
+0
+2601
+224
+1996532479
+1677546471385
+
+
+A flight to health is a phenomenon in which patients convince themselves that they’re suddenly over their issues because, unbeknownst to them, they can’t tolerate the anxiety that working through these issues is bringing up.
+0
+0
+0
+#
+3067
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+52
+0
+3369
+11
+1996532479
+1677546616130
+
+مرتبك
+disoriented
+0
+0
+0
+#
+3068
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+52
+0
+3820
+53
+1996532479
+1677546681047
+
+
+<BR>I wouldn’t want it back, but I’m glad I remember it.
+0
+0
+0
+#
+3070
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+53
+0
+11
+121
+1996532479
+1677547507502
+
+
+Though we travel the world over to find the beautiful, we must carry it with us, or we find it not.<BR><BR>—Ralph Waldo Emerson
+0
+0
+0
+#
+3071
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+54
+0
+2303
+4
+1996532479
+1677577638700
+
+
+This
+0
+0
+0
+#
+3072
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+52
+0
+11393
+51
+1996532479
+1677577719305
+
+
+I’d been mistaking feeling less for feeling better.
+0
+0
+0
+#
+3073
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+55
+0
+2667
+145
+1996532479
+1677649621536
+
+
+You can’t get through your pain by diminishing it, he reminded me. You get through your pain by accepting it and figuring out what to do with it.
+0
+0
+0
+#
+3074
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+56
+0
+13765
+5
+1996532479
+1677677008318
+
+
+n our
+0
+0
+0
+#
+3075
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+56
+0
+15191
+441
+1996532479
+1677711477310
+
+
+There’s another related concept that I share with John: impermanence. Sometimes in their pain, people believe that the agony will last forever. But feelings are actually more like weather systems—they blow in and they blow out. Just because you feel sad this minute or this hour or this day doesn’t mean you’ll feel that way in ten minutes or this afternoon or next week. Everything you feel—anxiety, elation, anguish—blows in and out again.
+0
+0
+0
+#
+3076
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+57
+0
+5517
+3
+1996532479
+1677712276972
+
+
+and
+0
+0
+0
+#
+3077
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+58
+0
+2647
+77
+1996532479
+1677740080077
+
+
+Research shows that people tend to remember experiences based on how they end
+0
+0
+0
+#
+3078
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+58
+0
+6104
+4
+1996532479
+1677740299949
+
+
+Then
+0
+0
+0
+#
+3079
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+59
+0
+4779
+4
+1996532479
+1677791171190
+
+
+What
+0
+0
+0
+#
+3080
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+59
+0
+14584
+82
+1996532479
+1677847819674
+
+
+I have the fantasy that all adults should be given the opportunity to hear parents
+0
+0
+0
+#
+3081
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+59
+0
+14684
+210
+1996532479
+1677847826584
+
+
+ themselves open, become completely vulnerable, and give their versions of events, because in seeing this, you can’t help but come to a newfound understanding of your own parents’ lives, whatever the situation.
+0
+0
+0
+#
+9053
+Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+56
+0
+15803
+-65536
+1996532479
+1717001673545
+(82.5%) memory might even plunge him into momentary despair. But another song, or another memory, might...
+
+
+0
+0
+0
+#
+9574
+Maybe You Should Talk to Someone
+/sdcard/Books/MoonReader/attachments/Maybe_You_Should_Talk_to_Someone.epub
+/sdcard/books/moonreader/attachments/maybe_you_should_talk_to_someone.epub
+48
+0
+17427
+168
+1996532479
+1722372199233
+
+
+We may want others’ forgiveness, but that comes from a place of self-gratification; we are asking forgiveness of others to avoid the harder work of forgiving ourselves.
 0
 0
 0
