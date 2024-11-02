@@ -297,7 +297,7 @@ export default function Home() {
               </Typography>
             </Paper>
             
-            <Button
+            {/* <Button
           variant="contained"
           color="secondary"
           onClick={handleUpload}
@@ -310,7 +310,7 @@ export default function Home() {
           }}
         >
           Import CSV Quotes
-        </Button>
+        </Button> */}
         
             <Button
               variant="contained"
