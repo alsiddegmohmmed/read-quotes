@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { Container, Typography, Button, Paper, IconButton, Box, CircularProgress , TextField} from '@mui/material';
+import { Container, Typography, Button, Paper, IconButton, Box, CircularProgress, TextField, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import CheckIcon from '@mui/icons-material/Check';
 import ShareIcon from '@mui/icons-material/Share';
@@ -17,19 +17,22 @@ export default function Home() {
   const [startId, setStartId] = useState("");
   const [endId, setEndId] = useState("");
   const [bookInfo, setBookInfo] = useState({ bookCount: 0, bookTitles: [] });
+  const [selectedBook, setSelectedBook] = useState('All Books');
 
 
 
   useEffect(() => {
-    
-    fetchQuotes();
     fetchBookInfo();
-
   }, []);
 
-  const fetchQuotes = async () => {
+  useEffect(() => {
+    fetchQuotes(selectedBook);
+  }, [selectedBook]);
+
+  const fetchQuotes = async (book) => {
     try {
-      const response = await fetch('/api/quotes');
+      const url = book && book !== 'All Books' ? `/api/quotes?book=${encodeURIComponent(book)}` : '/api/quotes';
+      const response = await fetch(url);
       const data = await response.json();
       setQuotes(data);
       if (data.length > 0) {
@@ -57,6 +60,10 @@ export default function Home() {
     }
   };
 
+  const handleBookChange = (event) => {
+    setSelectedBook(event.target.value);
+  };
+
   
 
     const handleUpload = async () => {
@@ -65,7 +72,7 @@ export default function Home() {
 
         if (response.status === 200) {
           setAlert({ severity: 'success', message: response.data.message });
-          fetchQuotes(); // Refresh the quotes
+          fetchQuotes(selectedBook); // Refresh the quotes
         }
       } catch (error) {
         console.error('Error uploading quotes:', error);
@@ -82,7 +89,7 @@ export default function Home() {
 
         if (response.status === 200) {
           setAlert({ severity: 'success', message: response.data.message });
-          fetchQuotes(); // Refresh the quotes
+          fetchQuotes(selectedBook); // Refresh the quotes
         }
       } catch (error) {
         console.error('Error deleting quotes:', error);
@@ -239,6 +246,26 @@ export default function Home() {
                 </Typography>
               </IconButton>
             </Box>
+
+            <FormControl fullWidth size="small" sx={{ mt: 2 }}>
+              <InputLabel id="book-select-label" sx={{ color: '#FBFEF9' }}>Select Book</InputLabel>
+              <Select
+                labelId="book-select-label"
+                value={selectedBook}
+                label="Select Book"
+                onChange={handleBookChange}
+                sx={{
+                  color: '#FBFEF9',
+                  '.MuiOutlinedInput-notchedOutline': { borderColor: '#FBFEF9' },
+                  '& .MuiSvgIcon-root': { color: '#FBFEF9' },
+                }}
+              >
+                <MenuItem value="All Books">All Books</MenuItem>
+                {bookInfo.bookTitles.map((title) => (
+                  <MenuItem key={title} value={title}>{title}</MenuItem>
+                ))}
+              </Select>
+            </FormControl>
 
             <Paper
               elevation={0}
