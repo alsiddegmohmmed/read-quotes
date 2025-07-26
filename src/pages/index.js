@@ -202,79 +202,75 @@ export default function Home() {
          
 
           <Box sx={{ position: 'relative', width: '100%', maxWidth: { xs: '95%', sm: '80%', md: '600px' } }}>
-            <Box sx={{ position: 'absolute', top: '10px', right: '10px', zIndex: 1, display: 'flex' }}>
-              <IconButton
-                onClick={handleCopyQuote}
-                sx={{
-                  color: '#FBFEF9',
-                  padding: '4px',
-                  marginRight: '8px',
-                }}
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>
+              <FormControl
+                size="small"
+                sx={{ width: { xs: '150px', sm: '180px' } }}
               >
-                {isCopied ? (
-                  <CheckIcon fontSize="small" />
-                ) : (
-                  <ContentCopyIcon fontSize="small" />
-                )}
-                <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
-                  {isCopied ? 'Copied!' : 'Copy'}
-                </Typography>
-              </IconButton>
-              <IconButton
-                onClick={handleShare}
-                sx={{
-                  color: '#FBFEF9',
-                  padding: '4px',
-                }}
-              >
-                <ShareIcon fontSize="small" />
-                <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
-                  Share
-                </Typography>
-              </IconButton>
-              <IconButton
-                onClick={handleShareImage}
-                sx={{
-                  color: '#FBFEF9',
-                  padding: '4px',
-                  marginLeft: '8px',
-                }}
-              >
-                <ShareIcon fontSize="small" />
-                <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
-                  Share Image
-                </Typography>
-              </IconButton>
-            </Box>
+                <InputLabel id="book-select-label" sx={{ color: '#FBFEF9' }}>Select Book</InputLabel>
+                <Select
+                  labelId="book-select-label"
+                  value={selectedBook}
+                  label="Select Book"
+                  onChange={handleBookChange}
+                  sx={{
+                    color: '#FBFEF9',
+                    '.MuiOutlinedInput-notchedOutline': { borderColor: '#FBFEF9' },
+                    '& .MuiSvgIcon-root': { color: '#FBFEF9' },
+                  }}
+                >
+                  <MenuItem value="All Books">All Books</MenuItem>
+                  {bookInfo.bookTitles.map((title) => (
+                    <MenuItem key={title} value={title}>{title}</MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
 
-            <FormControl
-              size="small"
-              sx={{
-                width: { xs: '150px', sm: '180px' },
-                position: 'absolute',
-                top: '10px',
-                left: '10px',
-                zIndex: 2,
-              }}
-            >
-              <InputLabel id="book-select-label" sx={{ color: '#FBFEF9' }}>Select Book</InputLabel>
-              <Select
-                labelId="book-select-label"
-                value={selectedBook}
-                label="Select Book"
-                onChange={handleBookChange}
-                sx={{
-                  color: '#FBFEF9',
-                  '.MuiOutlinedInput-notchedOutline': { borderColor: '#FBFEF9' },
-                  '& .MuiSvgIcon-root': { color: '#FBFEF9' },
-                }}
-              >
-                <MenuItem value="All Books">All Books</MenuItem>
-                {bookInfo.bookTitles.map((title) => (
-                  <MenuItem key={title} value={title}>{title}</MenuItem>
-                ))}
-              </Select>
-            </FormControl>
+              <Box sx={{ display: 'flex' }}>
+                <IconButton
+                  onClick={handleCopyQuote}
+                  sx={{
+                    color: '#FBFEF9',
+                    padding: '4px',
+                    marginRight: '8px',
+                  }}
+                >
+                  {isCopied ? (
+                    <CheckIcon fontSize="small" />
+                  ) : (
+                    <ContentCopyIcon fontSize="small" />
+                  )}
+                  <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
+                    {isCopied ? 'Copied!' : 'Copy'}
+                  </Typography>
+                </IconButton>
+                <IconButton
+                  onClick={handleShare}
+                  sx={{
+                    color: '#FBFEF9',
+                    padding: '4px',
+                  }}
+                >
+                  <ShareIcon fontSize="small" />
+                  <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
+                    Share
+                  </Typography>
+                </IconButton>
+                <IconButton
+                  onClick={handleShareImage}
+                  sx={{
+                    color: '#FBFEF9',
+                    padding: '4px',
+                    marginLeft: '8px',
+                  }}
+                >
+                  <ShareIcon fontSize="small" />
+                  <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
+                    Share Image
+                  </Typography>
+                </IconButton>
+              </Box>
+            </Box>
 
             <Paper
               elevation={0}
