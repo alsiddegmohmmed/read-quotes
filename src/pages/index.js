@@ -254,6 +254,7 @@ export default function Home() {
                 position: 'absolute',
                 top: '10px',
                 left: '10px',
+                zIndex: 2,
               }}
             >
               <InputLabel id="book-select-label" sx={{ color: '#FBFEF9' }}>Select Book</InputLabel>
@@ -280,6 +281,7 @@ export default function Home() {
               ref={quoteCardRef}
               sx={{
                 position: 'relative',
+                zIndex: 1,
                 padding: { xs: '40px 20px', sm: '50px 30px', md: '60px 40px' },
                 borderRadius: '10px',
                 backgroundColor: '#000000',
