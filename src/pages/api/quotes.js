@@ -6,8 +6,17 @@ export default async function handler(req, res) {
     const { db } = await connectToDatabase();
 
     if (req.method === 'GET') {
-      const quotes = await db.collection('quotes').find({}).toArray();
-      
+      const { type, book } = req.query;
+
+      if (type === 'books') {
+        const titles = await db.collection('quotes').distinct('bookTitle');
+        return res.status(200).json(titles.map((t) => ({ bookTitle: t })));
+      }
+
+      const filter = book ? { bookTitle: book } : {};
+
+      const quotes = await db.collection('quotes').find(filter).toArray();
+
       if (quotes.length === 0) {
         return res.status(404).json({ message: 'No quotes found' });
       }
