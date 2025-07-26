@@ -247,7 +247,15 @@ export default function Home() {
               </IconButton>
             </Box>
 
-            <FormControl fullWidth size="small" sx={{ mt: 2 }}>
+            <FormControl
+              size="small"
+              sx={{
+                width: { xs: '150px', sm: '180px' },
+                position: 'absolute',
+                top: '10px',
+                left: '10px',
+              }}
+            >
               <InputLabel id="book-select-label" sx={{ color: '#FBFEF9' }}>Select Book</InputLabel>
               <Select
                 labelId="book-select-label"
