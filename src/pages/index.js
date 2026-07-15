@@ -277,7 +277,9 @@ export default function Home() {
         setNotice('Image saved');
       };
 
-      if (navigator.canShare?.({ files: [file] })) {
+      const isMobilePlatform = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      const canShareFile = isMobilePlatform && navigator.canShare?.({ files: [file] });
+      if (canShareFile) {
         try {
           await navigator.share({ files: [file], title: currentQuote.bookTitle });
         } catch (shareError) {
