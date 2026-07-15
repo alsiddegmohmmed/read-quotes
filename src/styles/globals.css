@@ -85,12 +85,14 @@ select:disabled {
 }
 
 .reading-room {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
   width: min(100%, 76rem);
+  height: 100svh;
   min-height: 100svh;
   margin: 0 auto;
-  padding: clamp(1.25rem, 3vw, 2.5rem) clamp(1rem, 4vw, 3.5rem) 1.5rem;
+  padding: clamp(0.45rem, 0.8vw, 0.75rem) clamp(1rem, 4vw, 3.5rem) 0.4rem;
+  overflow: hidden;
 }
 
 .site-header {
@@ -98,7 +100,7 @@ select:disabled {
   align-items: flex-end;
   justify-content: space-between;
   gap: 1.5rem;
-  padding-bottom: clamp(1.5rem, 4vw, 2.75rem);
+  padding-bottom: clamp(0.45rem, 0.75vw, 0.55rem);
   border-bottom: 1px solid var(--border);
 }
 
@@ -133,11 +135,19 @@ select:disabled {
   font-variant-numeric: tabular-nums;
 }
 
+.reading-card {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 .library-section {
   position: relative;
   z-index: 5;
+  flex: 0 0 auto;
   width: min(100%, 50rem);
-  margin: clamp(1rem, 2.5vw, 1.5rem) auto 0;
+  margin: clamp(0.35rem, 0.8vw, 0.6rem) auto 0;
 }
 
 .library-toggle {
@@ -285,18 +295,24 @@ select:disabled {
 }
 
 .reading-area {
-  display: flex;
+  display: block;
   flex: 1;
-  flex-direction: column;
-  justify-content: center;
   width: min(100%, 56rem);
+  min-height: 0;
   margin: 0 auto;
-  padding: clamp(3.5rem, 9vw, 7.5rem) 0 clamp(3rem, 7vw, 5.5rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable both-edges;
 }
 
 .quote-reader {
   position: relative;
+  display: flex;
   width: 100%;
+  min-height: 100%;
+  padding: clamp(1.25rem, 3.5vh, 2.75rem) 0;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .reader-status {
@@ -362,11 +378,13 @@ select:disabled {
 
 .reader-controls {
   display: flex;
+  flex: 0 0 auto;
   align-items: center;
   justify-content: space-between;
   gap: 1.25rem;
-  margin-top: clamp(2.5rem, 6vw, 4.5rem);
-  padding-top: 1.25rem;
+  min-height: 4rem;
+  margin-top: 0;
+  padding-top: 0.45rem;
   border-top: 1px solid var(--border);
 }
 
@@ -435,7 +453,8 @@ select:disabled {
 .empty-state,
 .error-state {
   display: flex;
-  min-height: 15rem;
+  min-height: 100%;
+  padding: 1.5rem 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -575,6 +594,8 @@ select:disabled {
   .reader-controls {
     align-items: stretch;
     flex-direction: column-reverse;
+    gap: 0;
+    padding-top: 0.15rem;
   }
 
   .quote-actions,
@@ -601,14 +622,21 @@ select:disabled {
 
 @media (max-width: 460px) {
   .reading-room {
+    padding-top: 0.45rem;
     padding-right: 1rem;
+    padding-bottom: max(0.45rem, env(safe-area-inset-bottom));
     padding-left: 1rem;
   }
 
   .site-header {
     align-items: flex-start;
     flex-direction: column;
-    gap: 0.85rem;
+    gap: 0.25rem;
+    padding-bottom: 0.45rem;
+  }
+
+  .eyebrow {
+    margin-bottom: 0.25rem;
   }
 
   .library-stats {
@@ -616,8 +644,11 @@ select:disabled {
   }
 
   .reading-area {
-    justify-content: flex-start;
-    padding-top: 1.75rem;
+    width: 100%;
+  }
+
+  .quote-reader {
+    padding: 1.25rem 0;
   }
 
   .quote-reader blockquote p {

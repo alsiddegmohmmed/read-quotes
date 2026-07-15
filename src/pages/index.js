@@ -326,86 +326,81 @@ export default function Home() {
           <LibraryStats bookCount={books.length} quoteCount={quoteCount} />
         </header>
 
-        <section className="library-section" aria-label="Library filters">
-          <button
-            type="button"
-            className="library-toggle"
-            aria-expanded={libraryOpen}
-            aria-controls="library-controls-panel"
-            onClick={() => setLibraryOpen((open) => !open)}
-          >
-            <span>Library</span>
-            <KeyboardArrowDownRoundedIcon aria-hidden="true" />
-          </button>
-          <div id="library-controls-panel" className="library-controls" hidden={!libraryOpen}>
-            <BookPicker
-              books={books}
-              value={view}
-              onChange={handleViewChange}
-              favoriteCount={favoriteIds.length}
-              recentCount={recentIds.filter((id) => quoteById.has(id)).length}
-              disabled={!books.length}
-            />
-            <SearchInput
-              value={search}
-              onChange={setSearch}
-              disabled={!books.length}
-              busy={search !== debouncedSearch || (loading && Boolean(search))}
-              scope={view === 'all'
-                ? 'Searching the complete library'
-                : view === 'favorites'
-                  ? 'Searching saved favorites'
-                  : view === 'recent'
-                    ? 'Searching recent passages'
-                    : `Searching within ${view}`}
-            />
-          </div>
-        </section>
-
-        <section className="reading-area" aria-label="Current passage">
-          {error ? (
-            <div className="error-state" role="alert">
-              <h2>The room is quiet for a moment.</h2>
-              <p>{error}</p>
-              <button type="button" onClick={retry}>Try again</button>
+        <section className="reading-card">
+          <section className="library-section" aria-label="Library filters">
+            <button
+              type="button"
+              className="library-toggle"
+              aria-expanded={libraryOpen}
+              aria-controls="library-controls-panel"
+              onClick={() => setLibraryOpen((open) => !open)}
+            >
+              <span>Library</span>
+              <KeyboardArrowDownRoundedIcon aria-hidden="true" />
+            </button>
+            <div id="library-controls-panel" className="library-controls" hidden={!libraryOpen}>
+              <BookPicker
+                books={books}
+                value={view}
+                onChange={handleViewChange}
+                favoriteCount={favoriteIds.length}
+                recentCount={recentIds.filter((id) => quoteById.has(id)).length}
+                disabled={!books.length}
+              />
+              <SearchInput
+                value={search}
+                onChange={setSearch}
+                disabled={!books.length}
+                busy={search !== debouncedSearch || (loading && Boolean(search))}
+                scope={view === 'all'
+                  ? 'Searching the complete library'
+                  : view === 'favorites'
+                    ? 'Searching saved favorites'
+                    : view === 'recent'
+                      ? 'Searching recent passages'
+                      : `Searching within ${view}`}
+              />
             </div>
-          ) : currentQuote ? (
-            <>
-              <QuoteReader quote={currentQuote} loading={loading} />
-              <div className="reader-controls">
-                <QuoteActions
-                  favorite={isFavorite(currentQuote._id)}
-                  copied={copied}
-                  onFavorite={handleFavorite}
-                  onCopy={handleCopy}
-                  onShare={handleShare}
-                  onShareImage={handleShareImage}
-                  disabled={controlsDisabled}
-                />
-                <QuoteNavigation
-                  onPrevious={showPrevious}
-                  onNext={showNext}
-                  onRandom={showRandom}
-                  canPrevious={history.canGoPrevious}
-                  disabled={controlsDisabled}
-                />
+          </section>
+
+          <section className="reading-area" aria-label="Current passage">
+            {error ? (
+              <div className="error-state" role="alert">
+                <h2>The room is quiet for a moment.</h2>
+                <p>{error}</p>
+                <button type="button" onClick={retry}>Try again</button>
               </div>
-            </>
-          ) : loading ? (
-            <div className="initial-loading" role="status">
-              <span className="loading-mark" aria-hidden="true" />
-              <p>Opening the library…</p>
-            </div>
-          ) : (
-            <EmptyState view={view} hasSearch={Boolean(debouncedSearch)} />
-          )}
+            ) : currentQuote ? (
+              <QuoteReader quote={currentQuote} loading={loading} />
+            ) : loading ? (
+              <div className="initial-loading" role="status">
+                <span className="loading-mark" aria-hidden="true" />
+                <p>Opening the library…</p>
+              </div>
+            ) : (
+              <EmptyState view={view} hasSearch={Boolean(debouncedSearch)} />
+            )}
+          </section>
         </section>
 
-        <footer className="site-footer">
-          <span>← Previous</span>
-          <span>R Random</span>
-          <span>Next →</span>
-        </footer>
+        <div className="reader-controls">
+          <QuoteActions
+            favorite={currentQuote ? isFavorite(currentQuote._id) : false}
+            copied={copied}
+            onFavorite={handleFavorite}
+            onCopy={handleCopy}
+            onShare={handleShare}
+            onShareImage={handleShareImage}
+            disabled={controlsDisabled}
+          />
+          <QuoteNavigation
+            onPrevious={showPrevious}
+            onNext={showNext}
+            onRandom={showRandom}
+            canPrevious={history.canGoPrevious}
+            disabled={controlsDisabled}
+          />
+        </div>
 
         <div className="share-image-card" ref={shareCardRef} aria-hidden="true">
           {currentQuote && (
