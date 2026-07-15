@@ -259,7 +259,6 @@ export default function Home() {
   const handleShareImage = async () => {
     if (!shareCardRef.current || !currentQuote) return;
     try {
-      await document.fonts?.ready;
       const canvas = await html2canvas(shareCardRef.current, {
         backgroundColor: '#11110f',
         scale: 2,
