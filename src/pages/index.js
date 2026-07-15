@@ -1,349 +1,412 @@
-import { useEffect, useState, useRef } from 'react';
-import { Container, Typography, Button, Paper, IconButton, Box, CircularProgress, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
-import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-import CheckIcon from '@mui/icons-material/Check';
-import ShareIcon from '@mui/icons-material/Share';
+import Head from 'next/head';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import html2canvas from 'html2canvas';
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/react";
+import BookPicker from '@/components/BookPicker';
+import LibraryStats from '@/components/LibraryStats';
+import QuoteActions from '@/components/QuoteActions';
+import QuoteNavigation from '@/components/QuoteNavigation';
+import QuoteReader from '@/components/QuoteReader';
+import SearchInput from '@/components/SearchInput';
+import { useDebouncedValue } from '@/hooks/useDebouncedValue';
+import { useFavorites, useRecentlyViewed } from '@/hooks/useLocalQuoteIds';
+import { useQuoteHistory } from '@/hooks/useQuoteHistory';
+import { matchesQuoteSearch, pickRandomQuote } from '@/lib/quoteState.mjs';
+
+function EmptyState({ view, hasSearch }) {
+  const content = hasSearch
+    ? ['No passages found', 'Try another word, title, or author.']
+    : view === 'favorites'
+      ? ['No favorites yet', 'Save a passage with the bookmark button and it will appear here.']
+      : view === 'recent'
+        ? ['No recent passages', 'Passages you read will quietly collect here.']
+        : ['No passages here', 'This part of the library is currently empty.'];
+
+  return (
+    <div className="empty-state" role="status">
+      <h2>{content[0]}</h2>
+      <p>{content[1]}</p>
+    </div>
+  );
+}
+
 export default function Home() {
-  const [quotes, setQuotes] = useState([]);
-  const [currentQuote, setCurrentQuote] = useState({});
-  const [alert, setAlert] = useState(null);
-  const [isCopied, setIsCopied] = useState(false);
+  const shareCardRef = useRef(null);
+  const requestRef = useRef(0);
+  const [books, setBooks] = useState([]);
+  const [allQuotes, setAllQuotes] = useState([]);
+  const [serverQuotes, setServerQuotes] = useState([]);
+  const [view, setView] = useState('all');
+  const [search, setSearch] = useState('');
+  const [currentId, setCurrentId] = useState();
   const [loading, setLoading] = useState(true);
-  const quoteCardRef = useRef(null);
-  const [bookInfo, setBookInfo] = useState({ bookCount: 0, bookTitles: [] });
-  const [selectedBook, setSelectedBook] = useState('All Books');
+  const [error, setError] = useState('');
+  const [notice, setNotice] = useState('');
+  const [copied, setCopied] = useState(false);
+  const [retryKey, setRetryKey] = useState(0);
+  const debouncedSearch = useDebouncedValue(search);
+  const { favoriteIds, isFavorite, toggleFavorite } = useFavorites();
+  const { recentIds, rememberQuote } = useRecentlyViewed();
+  const history = useQuoteHistory();
 
+  const quoteCount = useMemo(
+    () => books.reduce((sum, book) => sum + Number(book.quoteCount || 0), 0),
+    [books],
+  );
 
+  const quoteById = useMemo(
+    () => new Map(allQuotes.map((quote) => [quote._id, quote])),
+    [allQuotes],
+  );
+
+  const displayedQuotes = useMemo(() => {
+    if (view === 'favorites') {
+      return favoriteIds.map((id) => quoteById.get(id)).filter(Boolean).filter((quote) => matchesQuoteSearch(quote, debouncedSearch));
+    }
+    if (view === 'recent') {
+      return recentIds.map((id) => quoteById.get(id)).filter(Boolean).filter((quote) => matchesQuoteSearch(quote, debouncedSearch));
+    }
+    return serverQuotes;
+  }, [debouncedSearch, favoriteIds, quoteById, recentIds, serverQuotes, view]);
+
+  const currentQuote = displayedQuotes.find((quote) => quote._id === currentId);
 
   useEffect(() => {
-    fetchBookInfo();
-  }, []);
+    let cancelled = false;
+    fetch('/api/quotes?type=books')
+      .then(async (response) => {
+        if (!response.ok) throw new Error((await response.json()).message || 'Failed to load library');
+        return response.json();
+      })
+      .then((data) => { if (!cancelled) setBooks(data); })
+      .catch(() => { if (!cancelled) setError('The library details could not be loaded.'); });
+    return () => { cancelled = true; };
+  }, [retryKey]);
 
   useEffect(() => {
-    fetchQuotes(selectedBook);
-  }, [selectedBook]);
+    const requestId = ++requestRef.current;
+    const isLocalView = view === 'favorites' || view === 'recent';
+    const controller = new AbortController();
 
-  const fetchQuotes = async (book) => {
-    try {
-      const url = book && book !== 'All Books' ? `/api/quotes?book=${encodeURIComponent(book)}` : '/api/quotes';
-      const response = await fetch(url);
-      if (!response.ok) throw new Error('Failed to fetch quotes');
-      const data = await response.json();
-      setQuotes(data);
-      if (data.length > 0) {
-        setCurrentQuote(data[Math.floor(Math.random() * data.length)]);
+    if (isLocalView) {
+      setLoading(true);
+      setError('');
+      const quotesRequest = allQuotes.length
+        ? Promise.resolve(allQuotes)
+        : fetch('/api/quotes', { signal: controller.signal }).then(async (response) => {
+          if (!response.ok) throw new Error((await response.json()).message || 'Failed to load passages');
+          return response.json();
+        });
+
+      quotesRequest
+        .then((quotes) => {
+          if (requestId !== requestRef.current) return;
+          if (!allQuotes.length) setAllQuotes(quotes);
+          const map = new Map(quotes.map((quote) => [quote._id, quote]));
+          const ids = view === 'favorites' ? favoriteIds : recentIds;
+          const localQuotes = ids
+            .map((id) => map.get(id))
+            .filter(Boolean)
+            .filter((quote) => matchesQuoteSearch(quote, debouncedSearch));
+          const next = pickRandomQuote(localQuotes, currentId);
+          setCurrentId(next?._id);
+          history.resetHistory(next?._id);
+        })
+        .catch((fetchError) => {
+          if (fetchError.name !== 'AbortError' && requestId === requestRef.current) {
+            setCurrentId(undefined);
+            setError('The passages could not be loaded.');
+          }
+        })
+        .finally(() => {
+          if (requestId === requestRef.current) setLoading(false);
+        });
+
+      return () => controller.abort();
+    }
+
+    const params = new URLSearchParams();
+    if (view !== 'all') params.set('book', view);
+    if (debouncedSearch) params.set('search', debouncedSearch);
+    const url = `/api/quotes${params.size ? `?${params}` : ''}`;
+
+    setLoading(true);
+    setError('');
+    fetch(url, { signal: controller.signal })
+      .then(async (response) => {
+        if (!response.ok) throw new Error((await response.json()).message || 'Failed to load passages');
+        return response.json();
+      })
+      .then((data) => {
+        if (requestId !== requestRef.current) return;
+        setServerQuotes(data);
+        if (view === 'all' && !debouncedSearch) setAllQuotes(data);
+        const next = pickRandomQuote(data, currentId);
+        setCurrentId(next?._id);
+        history.resetHistory(next?._id);
+      })
+      .catch((fetchError) => {
+        if (fetchError.name !== 'AbortError' && requestId === requestRef.current) {
+          setServerQuotes([]);
+          setCurrentId(undefined);
+          setError('The passages could not be loaded.');
+        }
+      })
+      .finally(() => {
+        if (requestId === requestRef.current) setLoading(false);
+      });
+
+    return () => controller.abort();
+    // The selected saved IDs are read when a local view is entered; subsequent
+    // changes are handled by the missing-current guard below without resetting history.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [debouncedSearch, retryKey, view]);
+
+  useEffect(() => {
+    if (currentQuote?._id) rememberQuote(currentQuote._id);
+  }, [currentQuote?._id, rememberQuote]);
+
+  useEffect(() => {
+    if (loading || currentQuote) return;
+    const next = displayedQuotes[0];
+    if (next?._id !== currentId) {
+      setCurrentId(next?._id);
+      history.resetHistory(next?._id);
+    }
+  }, [currentId, currentQuote, displayedQuotes, history, loading]);
+
+  useEffect(() => {
+    if (!notice) return;
+    const timer = window.setTimeout(() => setNotice(''), 2400);
+    return () => window.clearTimeout(timer);
+  }, [notice]);
+
+  const showRandom = useCallback(() => {
+    const next = pickRandomQuote(displayedQuotes, currentId);
+    if (!next) return;
+    setCurrentId(next._id);
+    history.visitQuote(next._id);
+  }, [currentId, displayedQuotes, history]);
+
+  const showPrevious = useCallback(() => {
+    const previousId = history.goPrevious();
+    if (previousId) setCurrentId(previousId);
+  }, [history]);
+
+  const showNext = useCallback(() => {
+    const forwardId = history.goForward();
+    if (forwardId) setCurrentId(forwardId);
+    else showRandom();
+  }, [history, showRandom]);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      const target = event.target;
+      if (target instanceof HTMLElement && (target.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName))) return;
+      if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || loading || !currentQuote) return;
+      if (event.key === 'ArrowLeft' && history.canGoPrevious) {
+        event.preventDefault();
+        showPrevious();
+      } else if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        showNext();
+      } else if (event.key.toLocaleLowerCase() === 'r') {
+        event.preventDefault();
+        showRandom();
       }
-      setLoading(false);
-    } catch (error) {
-      setAlert({ severity: 'error', message: 'Failed to fetch quotes' });
-      setLoading(false);
-    }
-  };
-  
-  const fetchBookInfo = async () => {
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [currentQuote, history.canGoPrevious, loading, showNext, showPrevious, showRandom]);
+
+  const quoteText = currentQuote
+    ? `“${currentQuote.Quote}” — ${currentQuote.bookTitle}, ${currentQuote.Author}`
+    : '';
+
+  const handleCopy = async () => {
     try {
-      const response = await fetch('/api/quotes?type=books');
-      if (!response.ok) throw new Error('Failed to fetch books');
-      const books = await response.json();
-      const bookTitles = [...new Set(books.map(book => book.bookTitle))];
-      const bookCount = bookTitles.length;
-      setBookInfo({ bookCount, bookTitles });
-    } catch (error) {
-      console.error('Error fetching book info:', error);
+      await navigator.clipboard.writeText(quoteText);
+      setCopied(true);
+      setNotice('Copied to clipboard');
+      window.setTimeout(() => setCopied(false), 2200);
+    } catch {
+      setNotice('Could not copy this passage');
     }
-  };
-
-  const handleBookChange = (event) => {
-    setSelectedBook(event.target.value);
-  };
-
-  const handleChangeQuote = () => {
-    if (quotes.length > 0) {
-      setCurrentQuote(quotes[Math.floor(Math.random() * quotes.length)]);
-    }
-  };
-
-  const handleCopyQuote = () => {
-    const quoteText = `"${currentQuote.Quote}" — ${currentQuote.bookTitle}`;
-    navigator.clipboard.writeText(quoteText).then(() => {
-      setIsCopied(true);
-      setAlert({ severity: 'success', message: 'Quote copied to clipboard!' });
-      setTimeout(() => {
-        setIsCopied(false);
-      }, 3000);
-    }).catch(err => {
-      console.error('Error copying text: ', err);
-      setAlert({ severity: 'error', message: 'Failed to copy quote' });
-    });
   };
 
   const handleShare = async () => {
-    const quoteText = `"${currentQuote.Quote}" — ${currentQuote.bookTitle}`;
-    const shareData = {
-      title: 'Quote from Siddeg',
-      text: quoteText,
-      url: window.location.href
-    };
-
-    if (navigator.share) {
+    if (!navigator.share) {
       try {
-        await navigator.share(shareData);
-      } catch (err) {
-        console.error('Error sharing:', err);
-        setAlert({ severity: 'error', message: 'Failed to share quote' });
+        await navigator.clipboard.writeText(`${quoteText}\n${window.location.href}`);
+        setNotice('Copied for sharing');
+      } catch {
+        setNotice('Sharing is not available in this browser');
       }
-    } else {
-      setAlert({ severity: 'info', message: 'Sharing is not supported on this browser' });
+      return;
+    }
+    try {
+      await navigator.share({ title: currentQuote.bookTitle, text: quoteText, url: window.location.href });
+    } catch (shareError) {
+      if (shareError.name === 'AbortError') return;
+      try {
+        await navigator.clipboard.writeText(`${quoteText}\n${window.location.href}`);
+        setNotice('Copied for sharing');
+      } catch {
+        setNotice('Could not share this passage');
+      }
     }
   };
 
   const handleShareImage = async () => {
-    if (quoteCardRef.current) {
-      try {
-        const canvas = await html2canvas(quoteCardRef.current, { backgroundColor: null });
-        const imageData = canvas.toDataURL('image/png');
+    if (!shareCardRef.current || !currentQuote) return;
+    try {
+      await document.fonts?.ready;
+      const canvas = await html2canvas(shareCardRef.current, {
+        backgroundColor: '#11110f',
+        scale: 2,
+        useCORS: true,
+      });
+      const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
+      if (!blob) throw new Error('Image generation failed');
+      const file = new File([blob], 'passage.png', { type: 'image/png' });
+      const saveImage = () => {
+        const link = document.createElement('a');
+        link.download = 'passage.png';
+        link.href = URL.createObjectURL(blob);
+        link.click();
+        window.setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+        setNotice('Image saved');
+      };
 
-        const blob = await (await fetch(imageData)).blob();
-        const file = new File([blob], 'quote.png', { type: 'image/png' });
-
-        if (navigator.canShare && navigator.canShare({ files: [file] })) {
-          await navigator.share({
-            files: [file],
-            title: 'Quote from Siddeg',
-            text: `"${currentQuote.Quote}" — ${currentQuote.bookTitle} by ${currentQuote.Author}`,
-          });
-        } else {
-          const link = document.createElement('a');
-          link.href = imageData;
-          link.download = 'quote.png';
-          link.click();
+      if (navigator.canShare?.({ files: [file] })) {
+        try {
+          await navigator.share({ files: [file], title: currentQuote.bookTitle });
+        } catch (shareError) {
+          if (shareError.name === 'AbortError') return;
+          saveImage();
         }
-      } catch (err) {
-        console.error('Error sharing image:', err);
-        setAlert({ severity: 'error', message: 'Failed to share quote as image' });
+      } else {
+        saveImage();
       }
+    } catch (shareError) {
+      if (shareError.name !== 'AbortError') setNotice('Could not create the image');
     }
   };
 
-  const getAdjustedFontSize = (text) => {
-    const length = text ? text.length : 0;
-    if (length > 400) return '1.0rem';
-    if (length > 150) return '1.3rem';
-    return '1.3rem';
+  const handleViewChange = (nextView) => {
+    setView(nextView);
+    setSearch('');
   };
 
+  const handleFavorite = () => {
+    if (!currentQuote) return;
+    const wasFavorite = isFavorite(currentQuote._id);
+    toggleFavorite(currentQuote._id);
+    setNotice(wasFavorite ? 'Removed from favorites' : 'Saved to favorites');
+  };
+
+  const retry = () => setRetryKey((key) => key + 1);
+  const controlsDisabled = loading || Boolean(error) || !currentQuote;
+
   return (
-    <Container
-      disableGutters
-      maxWidth={false}
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        minHeight: '100vh',
-        width: '100%',
-        backgroundColor: '#000000',
-        padding: 0,
-        margin: 0,
-      }}
-    >
-      {loading ? (
-        <CircularProgress color="inherit" />
-      ) : (
-        <>
-        
-          
-          <Box sx={{ position: 'absolute', top: '10px', left: '10px', zIndex: 1, display: 'flex' }}>
-            <Typography variant="body1" sx={{ color: '#FBFEF9', mt: 2 }}>
-              Total Books: {bookInfo.bookCount}
-            </Typography>
-          </Box> 
-         
+    <>
+      <Head>
+        <title>Reading Room</title>
+        <meta name="description" content="A private library of meaningful passages." />
+      </Head>
+      <main className="reading-room">
+        <header className="site-header">
+          <div>
+            <p className="eyebrow">Private library</p>
+            <h1>Reading Room</h1>
+          </div>
+          <LibraryStats bookCount={books.length} quoteCount={quoteCount} />
+        </header>
 
-          <Box sx={{ position: 'relative', width: '100%', maxWidth: { xs: '95%', sm: '80%', md: '600px' } }}>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>
-              <FormControl
-                size="small"
-                sx={{ width: { xs: '150px', sm: '180px' } }}
-              >
-                <InputLabel id="book-select-label" sx={{ color: '#FBFEF9' }}>Select Book</InputLabel>
-                <Select
-                  labelId="book-select-label"
-                  value={selectedBook}
-                  label="Select Book"
-                  onChange={handleBookChange}
-                  sx={{
-                    color: '#FBFEF9',
-                    '.MuiOutlinedInput-notchedOutline': { borderColor: '#FBFEF9' },
-                    '& .MuiSvgIcon-root': { color: '#FBFEF9' },
-                  }}
-                >
-                  <MenuItem value="All Books">All Books</MenuItem>
-                  {bookInfo.bookTitles.map((title) => (
-                    <MenuItem key={title} value={title}>{title}</MenuItem>
-                  ))}
-                </Select>
-              </FormControl>
+        <section className="library-controls" aria-label="Library filters">
+          <BookPicker
+            books={books}
+            value={view}
+            onChange={handleViewChange}
+            favoriteCount={favoriteIds.length}
+            recentCount={recentIds.filter((id) => quoteById.has(id)).length}
+            disabled={!books.length}
+          />
+          <SearchInput
+            value={search}
+            onChange={setSearch}
+            disabled={!books.length}
+            busy={search !== debouncedSearch || (loading && Boolean(search))}
+            scope={view === 'all'
+              ? 'Searching the complete library'
+              : view === 'favorites'
+                ? 'Searching saved favorites'
+                : view === 'recent'
+                  ? 'Searching recent passages'
+                  : `Searching within ${view}`}
+          />
+        </section>
 
-              <Box sx={{ display: 'flex' }}>
-                <IconButton
-                  onClick={handleCopyQuote}
-                  sx={{
-                    color: '#FBFEF9',
-                    padding: '4px',
-                    marginRight: '8px',
-                  }}
-                >
-                  {isCopied ? (
-                    <CheckIcon fontSize="small" />
-                  ) : (
-                    <ContentCopyIcon fontSize="small" />
-                  )}
-                  <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
-                    {isCopied ? 'Copied!' : 'Copy'}
-                  </Typography>
-                </IconButton>
-                <IconButton
-                  onClick={handleShare}
-                  sx={{
-                    color: '#FBFEF9',
-                    padding: '4px',
-                  }}
-                >
-                  <ShareIcon fontSize="small" />
-                  <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
-                    Share
-                  </Typography>
-                </IconButton>
-                <IconButton
-                  onClick={handleShareImage}
-                  sx={{
-                    color: '#FBFEF9',
-                    padding: '4px',
-                    marginLeft: '8px',
-                  }}
-                >
-                  <ShareIcon fontSize="small" />
-                  <Typography variant="caption" sx={{ ml: 0.5, fontSize: '0.6rem' }}>
-                    Share Image
-                  </Typography>
-                </IconButton>
-              </Box>
-            </Box>
+        <section className="reading-area" aria-label="Current passage">
+          {error ? (
+            <div className="error-state" role="alert">
+              <h2>The room is quiet for a moment.</h2>
+              <p>{error}</p>
+              <button type="button" onClick={retry}>Try again</button>
+            </div>
+          ) : currentQuote ? (
+            <>
+              <QuoteReader quote={currentQuote} loading={loading} />
+              <div className="reader-controls">
+                <QuoteActions
+                  favorite={isFavorite(currentQuote._id)}
+                  copied={copied}
+                  onFavorite={handleFavorite}
+                  onCopy={handleCopy}
+                  onShare={handleShare}
+                  onShareImage={handleShareImage}
+                  disabled={controlsDisabled}
+                />
+                <QuoteNavigation
+                  onPrevious={showPrevious}
+                  onNext={showNext}
+                  onRandom={showRandom}
+                  canPrevious={history.canGoPrevious}
+                  disabled={controlsDisabled}
+                />
+              </div>
+            </>
+          ) : loading ? (
+            <div className="initial-loading" role="status">
+              <span className="loading-mark" aria-hidden="true" />
+              <p>Opening the library…</p>
+            </div>
+          ) : (
+            <EmptyState view={view} hasSearch={Boolean(debouncedSearch)} />
+          )}
+        </section>
 
-            <Paper
-              elevation={0}
-              ref={quoteCardRef}
-              sx={{
-                position: 'relative',
-                zIndex: 1,
-                padding: { xs: '40px 20px', sm: '50px 30px', md: '60px 40px' },
-                borderRadius: '10px',
-                backgroundColor: '#000000',
-                width: '100%',
-                boxSizing: 'border-box',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                minHeight: '300px',
-                maxHeight: '80vh',
-                overflow: 'hidden',
-              }}
-            >
-              <Box
-                sx={{
-                  flexGrow: 1,
-                  overflowY: 'auto',
-                }}
-              >
-                <Typography
-                  variant="body1"
-                  component="p"
-                  sx={{
-                    fontFamily: 'serif',
-                    color: '#FFFFFF',
-                    fontSize: {
-                      xs: '1rem',
-                      sm: '1.4rem',
-                      md: getAdjustedFontSize(currentQuote.Quote),
-                      lg: getAdjustedFontSize(currentQuote.Quote),
-                    },
-                    lineHeight: 1.6,
-                    textAlign: 'left',
-                  }}
-                >
-                  {currentQuote.Quote}
-                </Typography>
-              </Box>
-              <Typography
-                variant="caption"
-                sx={{
-                  color: '#888888',
-                  alignSelf: 'flex-end',
-                  fontFamily: 'sans-serif',
-                  fontSize: { xs: '0.7rem', sm: '0.8rem', md: '0.9rem' },
-                  textAlign: 'right',
-                }}
-              >
-                —{currentQuote.bookTitle} by {currentQuote.Author}
-              </Typography>
-            </Paper>
-            
-            {/* <Button
-          variant="contained"
-          color="secondary"
-          onClick={handleUpload}
-          sx={{
-            borderRadius: '20px',
-            padding: '10px 20px',
-            textTransform: 'none',
-            fontSize: '13px',
-            marginTop: '10px',
-          }}
-        >
-          Import CSV Quotes
-        </Button> */}
-        
-            <Button
-              variant="contained"
-              onClick={handleChangeQuote}
-              sx={{
-                borderRadius: '20px',
-                padding: '8px 16px',
-                textTransform: 'none',
-                fontSize: '12px',
-                backgroundColor: '#0E79B2',
-                alignSelf: 'flex-start',
-                mt: 2,
-                '&:hover': {
-                  backgroundColor: '#0B5F86',
-                }
-              }}
-            >
-              Next Quote
-            </Button>
-          </Box>
-          <Typography
-            variant="body2"
-            sx={{
-              color: '#888888',
-              mt: 4,
-              fontFamily: 'sans-serif',
-              textAlign: 'center',
-            }}
-          >
-            © {new Date().getFullYear()} Siddeg Omer. All rights reserved.
-          </Typography> 
+        <footer className="site-footer">
+          <span>← Previous</span>
+          <span>R Random</span>
+          <span>Next →</span>
+        </footer>
 
-          
-        </>
-      )}
-      <Analytics />
-      <SpeedInsights />
-    </Container>
-  )
+        <div className="share-image-card" ref={shareCardRef} aria-hidden="true">
+          {currentQuote && (
+            <>
+              <p>{currentQuote.Quote}</p>
+              <div>
+                <strong>{currentQuote.bookTitle}</strong>
+                <span>{currentQuote.Author}</span>
+              </div>
+            </>
+          )}
+        </div>
+
+        <div className="notice" role="status" aria-live="polite" data-visible={Boolean(notice)}>
+          {notice}
+        </div>
+      </main>
+    </>
+  );
 }
