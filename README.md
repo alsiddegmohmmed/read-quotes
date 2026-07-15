@@ -1,45 +1,47 @@
-![alt text](https://github.com/alsiddegmohmmed/read-quotes/blob/main/public/preview.png?raw=true)
+# Read Quotes
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+A small Next.js quote reader backed by Supabase.
 
-## Getting Started
+## Local setup
 
-First, run the development server:
+1. Copy the environment template:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   cp .env.example .env.local
+   ```
 
+2. Set the GoodQuotes2 project values in `.env.local`:
 
+   ```env
+   SUPABASE_URL=https://pbiobysefaglcaucobau.supabase.co
+   SUPABASE_PUBLISHABLE_KEY=sb_publishable_...
+   ```
 
+   Use a publishable key from **Supabase → Project Settings → API Keys**. Do not
+   use a secret or `service_role` key; the API route only needs public read
+   access protected by Row Level Security.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Install and run:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+   ```bash
+   npm install
+   npm run dev
+   ```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Vercel configuration
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+In **Vercel → Project → Settings → Environment Variables**, add these variables
+to Production, Preview, and Development:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `SUPABASE_URL` = `https://pbiobysefaglcaucobau.supabase.co`
+- `SUPABASE_PUBLISHABLE_KEY` = the active GoodQuotes2 publishable key
 
-## Learn More
+Remove the obsolete `MONGO_URI` variable, then redeploy the latest deployment.
+No `NEXT_PUBLIC_` variables or database secret keys are required.
 
-To learn more about Next.js, take a look at the following resources:
+## Database
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The schema is stored in
+`supabase/migrations/20260715000000_create_books_and_quotes.sql`. The `books`
+and `quotes` tables expose read-only access to anonymous and authenticated users
+through explicit grants and RLS policies.
