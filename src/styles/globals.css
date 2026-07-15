@@ -629,9 +629,9 @@ select:disabled {
   }
 
   .site-header {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.25rem;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 0.75rem;
     padding-bottom: 0.45rem;
   }
 
@@ -640,7 +640,7 @@ select:disabled {
   }
 
   .library-stats {
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 
   .reading-area {
@@ -662,6 +662,18 @@ select:disabled {
 
   .site-footer {
     display: none;
+  }
+}
+
+@media (max-width: 340px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .library-stats {
+    justify-content: flex-start;
   }
 }
 
