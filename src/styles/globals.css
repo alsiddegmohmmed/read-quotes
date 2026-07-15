@@ -44,7 +44,8 @@ body {
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
 }
 
@@ -53,13 +54,15 @@ button {
 }
 
 button:focus-visible,
-input:focus-visible {
+input:focus-visible,
+select:focus-visible {
   outline: 2px solid var(--focus);
   outline-offset: 3px;
 }
 
 button:disabled,
-input:disabled {
+input:disabled,
+select:disabled {
   cursor: not-allowed;
   opacity: 0.42;
 }
@@ -130,14 +133,49 @@ input:disabled {
   font-variant-numeric: tabular-nums;
 }
 
-.library-controls {
+.library-section {
   position: relative;
   z-index: 5;
+  width: min(100%, 50rem);
+  margin: clamp(1rem, 2.5vw, 1.5rem) auto 0;
+}
+
+.library-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0 0.15rem;
+  border: 0;
+  color: var(--text-muted);
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.library-toggle svg {
+  width: 1.2rem;
+  color: var(--text-faint);
+  transition: transform 160ms ease;
+}
+
+.library-toggle[aria-expanded='true'] svg {
+  transform: rotate(180deg);
+}
+
+.library-controls {
   display: grid;
   grid-template-columns: minmax(17rem, 1.25fr) minmax(14rem, 0.75fr);
   gap: 1rem;
-  width: min(100%, 50rem);
-  margin: clamp(1.5rem, 4vw, 2.75rem) auto 0;
+  margin-top: 0.75rem;
+}
+
+.library-controls[hidden] {
+  display: none;
 }
 
 .control-label {
@@ -168,7 +206,7 @@ input:disabled {
   background: #151513;
 }
 
-.book-picker-field input,
+.book-picker-field select,
 .search-field input {
   width: 100%;
   min-width: 0;
@@ -180,9 +218,11 @@ input:disabled {
   font-size: 0.9rem;
 }
 
-.book-picker-field input {
+.book-picker-field select {
+  appearance: none;
   padding: 0 2.7rem 0 0.9rem;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .book-picker-chevron {
@@ -191,88 +231,6 @@ input:disabled {
   width: 1.2rem !important;
   color: var(--text-faint);
   pointer-events: none;
-}
-
-.book-picker-popover {
-  position: absolute;
-  top: calc(100% + 0.45rem);
-  left: 0;
-  width: min(34rem, calc(100vw - 2rem));
-  overflow: hidden;
-  border: 1px solid var(--border-strong);
-  border-radius: 0.5rem;
-  background: #151513;
-  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.42);
-  transform-origin: top left;
-}
-
-.book-picker-hint {
-  padding: 0.72rem 0.85rem 0.6rem;
-  border-bottom: 1px solid var(--border);
-  color: var(--text-faint);
-  font-size: 0.72rem;
-}
-
-.book-picker-popover ul {
-  max-height: min(24rem, 55vh);
-  margin: 0;
-  padding: 0.35rem;
-  overflow-y: auto;
-  list-style: none;
-  overscroll-behavior: contain;
-}
-
-.book-picker-popover li[role='option'] {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  min-height: 3.55rem;
-  padding: 0.55rem 0.62rem;
-  border-radius: 0.3rem;
-  cursor: pointer;
-}
-
-.book-picker-popover li[role='option'][data-active='true'] {
-  background: #22221f;
-}
-
-.book-picker-popover li[role='option'][aria-selected='true'] .book-option-title {
-  color: var(--accent-strong);
-}
-
-.book-option-copy {
-  display: flex;
-  min-width: 0;
-  flex-direction: column;
-  gap: 0.18rem;
-}
-
-.book-option-title {
-  overflow: hidden;
-  font-family: var(--font-literata), Georgia, serif;
-  font-size: 0.88rem;
-  line-height: 1.35;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.book-option-author,
-.book-option-count {
-  color: var(--text-faint);
-  font-size: 0.72rem;
-  line-height: 1.3;
-}
-
-.book-option-count {
-  flex: 0 0 auto;
-  font-variant-numeric: tabular-nums;
-}
-
-.book-picker-empty {
-  padding: 1.25rem 0.85rem;
-  color: var(--text-muted);
-  font-size: 0.82rem;
 }
 
 .search-field {
@@ -360,14 +318,18 @@ input:disabled {
   margin: 0;
   color: var(--text);
   font-family: var(--font-literata), Georgia, 'Times New Roman', serif;
-  font-size: clamp(1.5rem, 1.1rem + 1.35vw, 2.45rem);
+  font-size: clamp(1.35rem, 5vw, 1.8rem);
   font-optical-sizing: auto;
   font-weight: 400;
   letter-spacing: -0.018em;
-  line-height: 1.58;
+  line-height: 1.5;
   overflow-wrap: anywhere;
   text-wrap: pretty;
   white-space: pre-wrap;
+}
+
+.quote-reader[data-long='true'] blockquote p {
+  font-size: clamp(1.35rem, 4vw, 1.55rem);
 }
 
 .quote-reader blockquote p + p {
@@ -610,10 +572,6 @@ input:disabled {
     grid-template-columns: 1fr;
   }
 
-  .book-picker-popover {
-    width: 100%;
-  }
-
   .reader-controls {
     align-items: stretch;
     flex-direction: column-reverse;
@@ -659,12 +617,12 @@ input:disabled {
 
   .reading-area {
     justify-content: flex-start;
-    padding-top: 3.6rem;
+    padding-top: 1.75rem;
   }
 
   .quote-reader blockquote p {
-    font-size: clamp(1.35rem, 7vw, 1.72rem);
-    line-height: 1.62;
+    font-size: clamp(1.35rem, 5vw, 1.8rem);
+    line-height: 1.5;
   }
 
   .quote-navigation button {

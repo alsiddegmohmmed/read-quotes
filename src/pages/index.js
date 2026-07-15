@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import html2canvas from 'html2canvas';
+import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 import BookPicker from '@/components/BookPicker';
 import LibraryStats from '@/components/LibraryStats';
 import QuoteActions from '@/components/QuoteActions';
@@ -43,6 +44,7 @@ export default function Home() {
   const [notice, setNotice] = useState('');
   const [copied, setCopied] = useState(false);
   const [retryKey, setRetryKey] = useState(0);
+  const [libraryOpen, setLibraryOpen] = useState(false);
   const debouncedSearch = useDebouncedValue(search);
   const { favoriteIds, isFavorite, toggleFavorite } = useFavorites();
   const { recentIds, rememberQuote } = useRecentlyViewed();
@@ -296,6 +298,7 @@ export default function Home() {
   const handleViewChange = (nextView) => {
     setView(nextView);
     setSearch('');
+    setLibraryOpen(false);
   };
 
   const handleFavorite = () => {
@@ -323,28 +326,40 @@ export default function Home() {
           <LibraryStats bookCount={books.length} quoteCount={quoteCount} />
         </header>
 
-        <section className="library-controls" aria-label="Library filters">
-          <BookPicker
-            books={books}
-            value={view}
-            onChange={handleViewChange}
-            favoriteCount={favoriteIds.length}
-            recentCount={recentIds.filter((id) => quoteById.has(id)).length}
-            disabled={!books.length}
-          />
-          <SearchInput
-            value={search}
-            onChange={setSearch}
-            disabled={!books.length}
-            busy={search !== debouncedSearch || (loading && Boolean(search))}
-            scope={view === 'all'
-              ? 'Searching the complete library'
-              : view === 'favorites'
-                ? 'Searching saved favorites'
-                : view === 'recent'
-                  ? 'Searching recent passages'
-                  : `Searching within ${view}`}
-          />
+        <section className="library-section" aria-label="Library filters">
+          <button
+            type="button"
+            className="library-toggle"
+            aria-expanded={libraryOpen}
+            aria-controls="library-controls-panel"
+            onClick={() => setLibraryOpen((open) => !open)}
+          >
+            <span>Library</span>
+            <KeyboardArrowDownRoundedIcon aria-hidden="true" />
+          </button>
+          <div id="library-controls-panel" className="library-controls" hidden={!libraryOpen}>
+            <BookPicker
+              books={books}
+              value={view}
+              onChange={handleViewChange}
+              favoriteCount={favoriteIds.length}
+              recentCount={recentIds.filter((id) => quoteById.has(id)).length}
+              disabled={!books.length}
+            />
+            <SearchInput
+              value={search}
+              onChange={setSearch}
+              disabled={!books.length}
+              busy={search !== debouncedSearch || (loading && Boolean(search))}
+              scope={view === 'all'
+                ? 'Searching the complete library'
+                : view === 'favorites'
+                  ? 'Searching saved favorites'
+                  : view === 'recent'
+                    ? 'Searching recent passages'
+                    : `Searching within ${view}`}
+            />
+          </div>
         </section>
 
         <section className="reading-area" aria-label="Current passage">

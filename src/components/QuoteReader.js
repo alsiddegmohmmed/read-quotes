@@ -2,7 +2,12 @@ export default function QuoteReader({ quote, loading }) {
   const paragraphs = quote?.Quote.split(/\n\s*\n/).filter(Boolean) ?? [];
 
   return (
-    <article className="quote-reader" aria-busy={loading} aria-live="polite">
+    <article
+      className="quote-reader"
+      data-long={quote?.Quote.length > 500 || undefined}
+      aria-busy={loading}
+      aria-live="polite"
+    >
       {loading && <p className="reader-status">Finding a passage…</p>}
       {quote && (
         <>
